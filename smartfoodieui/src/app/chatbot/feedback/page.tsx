@@ -15,7 +15,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content: `Welcome to the feedback analyzer! How can I assist you?`,
+      content: `Welcome to the Feedback Analyzer! Share your feedback data, and I’ll provide a clear and concise summary for you.`,
       timestamp: new Date(),
     },
   ]);
@@ -36,7 +36,11 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 
     // Simulate bot response
     setTimeout(() => {
-      const botResponse = `This is a response related to ${feature ?? "general"}.`;
+      const botResponse = `Summary:
+- Positive: Customers appreciate the local artisan cheese selection, the seasonal offers on fresh produce, and discounts on bulk purchases of pantry essentials.
+- Negative: Delivery times are inconsistent, and the seafood section lacks variety (e.g., shellfish).
+`;
+      //const botResponse = `This is a response related to ${feature ?? "general"}.`;
       const botMessage: Message = {
         type: "bot",
         content: botResponse,
