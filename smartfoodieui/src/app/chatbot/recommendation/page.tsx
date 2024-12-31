@@ -9,13 +9,17 @@ interface Message {
   timestamp: Date;
 }
 
-export default function ChatbotPage({ params }: { params: { feature?: string } }) {
+export default function ChatbotPage({
+  params,
+}: {
+  params: { feature?: string };
+}) {
   const { feature } = params || {}; // Safely access params
   const router = useRouter();
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content: `Welcome to the product recommendation engine! How can I assist you?`,
+      content: `Welcome to the product recommendation engine! Please provide your business name, category, and scale (e.g., Small, Medium, Large).`,
       timestamp: new Date(),
     },
   ]);
@@ -36,7 +40,8 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 
     // Simulate bot response
     setTimeout(() => {
-      const botResponse = `This is a response related to ${feature ?? "general"}.`;
+      const botResponse =
+        "Thank you for providing the details. Based on your input, here are some product recommendations: \n- Mixed Lettuce \n- Roma Tomatoes \n- Yellow Onions";
       const botMessage: Message = {
         type: "bot",
         content: botResponse,
@@ -91,6 +96,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
                       ? "bg-orange-600 text-white"
                       : "bg-white border-2 border-orange-100 text-orange-600"
                   }`}
+                  style={{ whiteSpace: "pre-wrap" }}
                 >
                   <p className="text-sm mb-1">{message.content}</p>
                   <span className="text-xs opacity-75">
