@@ -15,7 +15,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content: "Welcome to the sales report assistant! How can I assist you?",
+      content: "Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.",
       timestamp: new Date(),
     },
     {
@@ -87,19 +87,13 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`flex ${
-                message.type === "user" ? "justify-end" : "justify-start"
-              }`}
+              className={`flex ${message.type === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`flex items-start space-x-2 max-w-[80%] ${
-                  message.type === "user" ? "flex-row-reverse" : "flex-row"
-                }`}
+                className={`flex items-start space-x-2 max-w-[80%] ${message.type === "user" ? "flex-row-reverse" : "flex-row"}`}
               >
                 <div
-                  className={`rounded-full p-2 ${
-                    message.type === "user" ? "bg-orange-100" : "bg-white"
-                  }`}
+                  className={`rounded-full p-2 ${message.type === "user" ? "bg-orange-100" : "bg-white"}`}
                 >
                   {message.type === "user" ? (
                     <User className="w-5 h-5 text-orange-600" />
@@ -108,11 +102,7 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
                   )}
                 </div>
                 <div
-                  className={`p-4 rounded-2xl shadow-sm ${
-                    message.type === "user"
-                      ? "bg-orange-600 text-white"
-                      : "bg-white border-2 border-orange-100 text-orange-600 bot-message"
-                  }`}
+                  className={`p-4 rounded-2xl shadow-sm ${message.type === "user" ? "bg-orange-600 text-white" : "bg-white border-2 border-orange-100 text-orange-600 bot-message"}`}
                 >
                   <p className="text-sm mb-1 whitespace-pre-wrap">{message.content}</p>
                   <span className="text-xs opacity-75">
@@ -128,8 +118,9 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
         </div>
       </div>
 
-      <div className="bg-white border-t px-4 py-4 shadow-lg">
-        <form onSubmit={handleSubmit} className="flex space-x-4">
+      {/* Center the input box at the bottom */}
+      <div className="bg-white border-t px-4 py-4 shadow-lg flex justify-center items-center fixed bottom-0 left-0 right-0">
+        <form onSubmit={handleSubmit} className="flex space-x-4 w-full max-w-3xl">
           <input
             type="text"
             value={input}
@@ -148,3 +139,5 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
     </div>
   );
 }
+
+
