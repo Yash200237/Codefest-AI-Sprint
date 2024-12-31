@@ -17,12 +17,7 @@ export default function ForecastPage() {
   } | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const categories = [
-    "Fruits",
-    "Vegetables",
-    "Grains",
-    "Dairy"
-  ];
+  const categories = ["Fruits", "Vegetables", "Grains", "Dairy"];
 
   const months = [
     "January",
@@ -57,28 +52,28 @@ export default function ForecastPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100">
-      <header className="bg-gray-800 border-b border-gray-700 px-6 py-5 flex justify-between items-center">
+    <div className="flex flex-col min-h-screen bg-white text-gray-800">
+      <header className="bg-orange-500 px-6 py-5 flex justify-between items-center shadow-md">
         <button
           onClick={() => router.push("/")}
-          className="text-orange-500 font-semibold hover:underline flex items-center gap-2"
+          className="text-white font-semibold hover:underline flex items-center gap-2"
         >
           Back to Menu
         </button>
-        <h1 className="text-xl font-bold text-orange-500">Sales Forecast</h1>
+        <h1 className="text-xl font-bold text-white">Sales Forecast</h1>
       </header>
 
       <div className="flex-grow overflow-auto p-6 flex items-center justify-center">
         <div className="w-full max-w-2xl space-y-8">
-          <div className="bg-gray-800 shadow-lg p-6 rounded-lg">
-            <h2 className="text-lg font-bold text-orange-400 mb-4">
+          <div className="bg-orange-100 shadow-lg p-6 rounded-lg">
+            <h2 className="text-lg font-bold text-orange-600 mb-4">
               Product Revenue Prediction
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="productName"
-                  className="block text-sm font-medium text-gray-300"
+                  className="block text-sm font-medium text-gray-700"
                 >
                   Product Name
                 </label>
@@ -91,14 +86,14 @@ export default function ForecastPage() {
                   }
                   placeholder="Enter product name"
                   required
-                  className="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-gray-100 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="mt-1 block w-full rounded-md bg-white border border-gray-300 text-gray-700 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="category"
-                  className="block text-sm font-medium text-gray-300"
+                  className="block text-sm font-medium text-gray-700"
                 >
                   Category
                 </label>
@@ -109,7 +104,7 @@ export default function ForecastPage() {
                     setFormData({ ...formData, category: e.target.value })
                   }
                   required
-                  className="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-gray-100 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="mt-1 block w-full rounded-md bg-white border border-gray-300 text-gray-700 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
                 >
                   <option value="" disabled>
                     Select a category
@@ -125,7 +120,7 @@ export default function ForecastPage() {
               <div>
                 <label
                   htmlFor="month"
-                  className="block text-sm font-medium text-gray-300"
+                  className="block text-sm font-medium text-gray-700"
                 >
                   Month
                 </label>
@@ -136,7 +131,7 @@ export default function ForecastPage() {
                     setFormData({ ...formData, month: e.target.value })
                   }
                   required
-                  className="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-gray-100 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                  className="mt-1 block w-full rounded-md bg-white border border-gray-300 text-gray-700 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
                 >
                   <option value="" disabled>
                     Select a month
@@ -160,13 +155,13 @@ export default function ForecastPage() {
           </div>
 
           {prediction && (
-            <div className="bg-gray-800 shadow-lg p-6 rounded-lg">
-              <h2 className="text-lg font-bold text-orange-400 mb-4">
+            <div className="bg-orange-100 shadow-lg p-6 rounded-lg">
+              <h2 className="text-lg font-bold text-orange-600 mb-4">
                 Prediction Results
               </h2>
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-300">
+                  <label className="block text-sm font-medium text-gray-700">
                     Predicted Revenue
                   </label>
                   <p className="text-2xl font-bold text-orange-500">
@@ -174,7 +169,7 @@ export default function ForecastPage() {
                   </p>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-300">
+                  <label className="block text-sm font-medium text-gray-700">
                     Predicted Sold Ratio
                   </label>
                   <p className="text-2xl font-bold text-orange-500">
