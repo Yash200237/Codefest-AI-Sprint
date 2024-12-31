@@ -165,7 +165,7 @@ const SalesChatbot = () => {
                   className={`p-4 rounded-2xl shadow-sm ${
                     message.type === "user"
                       ? "bg-orange-600 text-white"
-                      : "bg-white border-2 border-orange-100 text-gray-900"
+                      : "bg-white border-2 border-orange-100 text-orange-600"
                   }`}
                 >
                   <p className="text-sm mb-1">{message.content}</p>
@@ -208,7 +208,7 @@ const SalesChatbot = () => {
               value={input}
               onChange={handleInputChange}
               placeholder="Ask about your selection or type your query"
-              className="flex-grow p-4 border-2 border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+              className="flex-grow p-4 border-2 border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900"
             />
             <button
               type="submit"
