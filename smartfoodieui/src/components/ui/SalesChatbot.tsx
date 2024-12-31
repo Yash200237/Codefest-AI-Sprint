@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { Send, User, Bot } from "lucide-react";
+import {useRouter} from "next/navigation";
 
 interface Message {
   type: "user" | "bot";
@@ -15,6 +16,7 @@ const FeatureSelectionPage = ({
 }: {
   onSelectFeature: (feature: Feature) => void;
 }) => {
+  const router = useRouter();
   return (
     <div
       className="flex flex-col h-screen bg-orange-50 justify-center items-center"
@@ -42,7 +44,13 @@ const FeatureSelectionPage = ({
         ].map((option) => (
           <button
             key={option.feature}
-            onClick={() => onSelectFeature(option.feature as Feature)}
+            onClick={() => {
+              if (option.feature === "forecast") {
+                router.push("/forecast");
+              } else {
+                onSelectFeature(option.feature as Feature);
+              }
+            }}
             className="p-6 rounded-lg bg-orange-600 text-white text-lg font-semibold hover:bg-orange-700 hover:scale-105 transition-transform duration-200 ease-out"
           >
             {option.label}
