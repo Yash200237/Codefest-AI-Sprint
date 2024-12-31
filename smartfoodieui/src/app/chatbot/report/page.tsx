@@ -17,8 +17,8 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
       type: "bot",
       content: "Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.",
       timestamp: new Date(),
-    },
-    {
+    }
+    /*{
       type: "user",
       content: "This week, the revenue for carrots was $1,200, while potatoes brought in $1,800. Tomatoes generated $2,500 in revenue, lettuce earned $900, and spinach made $600.",
       timestamp: new Date(),
@@ -37,7 +37,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 Summary:
 Tomatoes generated the highest revenue at $2,500, while Spinach generated the lowest revenue at $600. Focus on promoting Lettuce and Spinach to increase sales.`,
       timestamp: new Date(),
-    },
+    },*/
   ]);
 
   const [input, setInput] = useState("");
@@ -57,7 +57,16 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
 
     // Simulated bot response with hardcoded timeout
     setTimeout(() => {
-      const botResponse = `This is a response related to ${feature ?? "general"}.`;
+      const botResponse = `Weekly Revenue Report:
+- Total Revenue: $7,000
+- Individual Item Revenues:
+  - Carrots: $1,200
+  - Potatoes: $1,800
+  - Tomatoes: $2,500
+  - Lettuce: $900
+  - Spinach: $600
+Summary:
+Tomatoes generated the highest revenue at $2,500, while Spinach generated the lowest revenue at $600. Focus on promoting Lettuce and Spinach to increase sales.`;
       const botMessage: Message = {
         type: "bot",
         content: botResponse,
