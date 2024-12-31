@@ -40,7 +40,6 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 - Positive: Customers appreciate the local artisan cheese selection, the seasonal offers on fresh produce, and discounts on bulk purchases of pantry essentials.
 - Negative: Delivery times are inconsistent, and the seafood section lacks variety (e.g., shellfish).
 `;
-      //const botResponse = `This is a response related to ${feature ?? "general"}.`;
       const botMessage: Message = {
         type: "bot",
         content: botResponse,
@@ -59,9 +58,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
         >
           Back to Menu
         </button>
-        <h1 className="text-xl font-bold text-orange-600">
-          Feedback Analyzer
-        </h1>
+        <h1 className="text-xl font-bold text-orange-600">Feedback Analyzer</h1>
       </header>
 
       <div className="flex-grow overflow-auto px-4 py-6">
@@ -110,8 +107,8 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
         </div>
       </div>
 
-      <div className="bg-white border-t px-4 py-4 shadow-lg">
-        <form onSubmit={handleSubmit} className="flex space-x-4">
+      <div className="fixed bottom-0 inset-x-0 flex items-center justify-center bg-white border-t shadow-lg px-4 py-4">
+        <form onSubmit={handleSubmit} className="flex space-x-4 w-full max-w-3xl">
           <input
             type="text"
             value={input}
@@ -132,3 +129,5 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     </div>
   );
 }
+
+

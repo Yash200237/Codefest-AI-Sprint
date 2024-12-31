@@ -112,8 +112,9 @@ export default function ChatbotPage({
         </div>
       </div>
 
-      <div className="bg-white border-t px-4 py-4 shadow-lg">
-        <form onSubmit={handleSubmit} className="flex space-x-4">
+      {/* Updated section for the fixed input tab at the bottom center */}
+      <div className="fixed bottom-0 inset-x-0 flex items-center justify-center bg-white border-t shadow-lg px-4 py-4">
+        <form onSubmit={handleSubmit} className="flex space-x-4 w-full max-w-3xl">
           <input
             type="text"
             value={input}
@@ -134,3 +135,4 @@ export default function ChatbotPage({
     </div>
   );
 }
+
