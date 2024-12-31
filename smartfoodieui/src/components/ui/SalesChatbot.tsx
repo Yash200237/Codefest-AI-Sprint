@@ -10,61 +10,51 @@ interface Message {
 
 type Feature = "recommendation" | "forecast" | "feedback" | "report";
 
-const SalesChatbot = () => {
+const FeatureSelectionPage = ({
+  onSelectFeature,
+}: {
+  onSelectFeature: (feature: Feature) => void;
+}) => {
+  return (
+    <div className="flex flex-col h-screen bg-orange-50 justify-center items-center">
+      <h1 className="text-2xl font-bold text-orange-600 mb-6">
+        SmartFoodie Sales Assistant
+      </h1>
+      <div className="grid grid-cols-2 gap-4 w-3/4">
+        {[
+          { label: "Product Recommendations", feature: "recommendation" },
+          { label: "Sales Forecast", feature: "forecast" },
+          { label: "Feedback Analysis", feature: "feedback" },
+          { label: "Sales Report", feature: "report" },
+        ].map((option) => (
+          <button
+            key={option.feature}
+            onClick={() => onSelectFeature(option.feature as Feature)}
+            className="p-6 rounded-lg bg-orange-600 text-white text-lg font-semibold hover:bg-orange-700 transition-colors"
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const ChatbotPage = ({
+  feature,
+  onBack,
+}: {
+  feature: Feature;
+  onBack: () => void;
+}) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content: "👋 Welcome to SmartFoodie! How can I assist you today?",
+      content: `Welcome to the ${feature} assistant! How can I assist you?`,
       timestamp: new Date(),
     },
   ]);
   const [input, setInput] = useState("");
-  const [selectedFeature, setSelectedFeature] = useState<Feature | null>(null);
-
-  const handleFeatureSelect = (feature: Feature) => {
-    setSelectedFeature((prevFeature) =>
-      prevFeature === feature ? null : feature
-    );
-    let featureWelcomeMessage = "";
-
-    if (selectedFeature === feature) {
-      const botMessage: Message = {
-        type: "bot",
-        content: "Option unselected. Let me know how else I can assist you.",
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, botMessage]);
-      return;
-    }
-
-    switch (feature) {
-      case "recommendation":
-        featureWelcomeMessage =
-          "Great choice! Let me help you find the best product recommendations for you.";
-        break;
-      case "forecast":
-        featureWelcomeMessage =
-          "Let’s dive into sales forecasting and predict the trends for you.";
-        break;
-      case "feedback":
-        featureWelcomeMessage =
-          "I’ll assist you in analyzing customer feedback to improve your offerings.";
-        break;
-      case "report":
-        featureWelcomeMessage =
-          "Let’s generate a detailed sales report for your business.";
-        break;
-      default:
-        featureWelcomeMessage = "How can I assist you today?";
-    }
-
-    const botMessage: Message = {
-      type: "bot",
-      content: featureWelcomeMessage,
-      timestamp: new Date(),
-    };
-    setMessages((prev) => [...prev, botMessage]);
-  };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -79,10 +69,10 @@ const SalesChatbot = () => {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
-    // Simulate bot response based on selected feature
+    // Simulate bot response based on feature
     setTimeout(() => {
       let botResponseContent = "";
-      switch (selectedFeature) {
+      switch (feature) {
         case "recommendation":
           botResponseContent =
             "Here are some recommended products based on your preferences.";
@@ -113,29 +103,28 @@ const SalesChatbot = () => {
     }, 1000);
   };
 
-  const formatTime = (date: Date): string => {
-    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-  };
-
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
 
+  const formatTime = (date: Date): string => {
+    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  };
+
   return (
     <div className="flex flex-col h-screen bg-orange-50">
-      {/* Header */}
-      <header className="bg-white border-b px-6 py-5">
-        <div className="max-w-3xl mx-auto flex justify-center items-center">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold text-orange-600 tracking-wide">
-              SmartFoodie Sales Assistant
-            </h1>
-            <div className="h-1 w-24 bg-orange-600 mx-auto mt-2 rounded-full"></div>
-          </div>
-        </div>
+      <header className="bg-white border-b px-6 py-5 flex justify-between items-center">
+        <button
+          onClick={onBack}
+          className="text-orange-600 font-semibold hover:underline"
+        >
+          Back to Menu
+        </button>
+        <h1 className="text-xl font-bold text-orange-600">
+          {feature.charAt(0).toUpperCase() + feature.slice(1)} Assistant
+        </h1>
       </header>
 
-      {/* Main chat area */}
       <div className="flex-grow overflow-auto px-4 py-6">
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.map((message, index) => (
@@ -179,47 +168,37 @@ const SalesChatbot = () => {
         </div>
       </div>
 
-      {/* Input area with feature selection */}
       <div className="bg-white border-t px-4 py-4 shadow-lg">
-        <div className="max-w-3xl mx-auto">
-          <div className="flex justify-between mb-4">
-            {[
-              { label: "Product Recommendations", feature: "recommendation" },
-              { label: "Sales Forecast", feature: "forecast" },
-              { label: "Feedback Analysis", feature: "feedback" },
-              { label: "Sales Report", feature: "report" },
-            ].map((option) => (
-              <button
-                key={option.feature}
-                onClick={() => handleFeatureSelect(option.feature as Feature)}
-                className={`flex-1 p-3 mx-1 rounded-lg text-center font-semibold text-white transition-colors ${
-                  selectedFeature === option.feature
-                    ? "bg-orange-700"
-                    : "bg-orange-600 hover:bg-orange-700"
-                }`}
-              >
-                {option.label}
-              </button>
-            ))}
-          </div>
-          <form onSubmit={handleSubmit} className="flex space-x-4">
-            <input
-              type="text"
-              value={input}
-              onChange={handleInputChange}
-              placeholder="Ask about your selection or type your query"
-              className="flex-grow p-4 border-2 border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900"
-            />
-            <button
-              type="submit"
-              className="h-14 w-14 flex items-center justify-center rounded-xl bg-orange-600 hover:bg-orange-700 text-white transition-colors"
-            >
-              <Send className="w-5 h-5" />
-            </button>
-          </form>
-        </div>
+        <form onSubmit={handleSubmit} className="flex space-x-4">
+          <input
+            type="text"
+            value={input}
+            onChange={handleInputChange}
+            placeholder="Ask about your selection or type your query"
+            className="flex-grow p-4 border-2 border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900"
+          />
+          <button
+            type="submit"
+            className="h-14 w-14 flex items-center justify-center rounded-xl bg-orange-600 hover:bg-orange-700 text-white transition-colors"
+          >
+            <Send className="w-5 h-5" />
+          </button>
+        </form>
       </div>
     </div>
+  );
+};
+
+const SalesChatbot = () => {
+  const [selectedFeature, setSelectedFeature] = useState<Feature | null>(null);
+
+  return selectedFeature ? (
+    <ChatbotPage
+      feature={selectedFeature}
+      onBack={() => setSelectedFeature(null)}
+    />
+  ) : (
+    <FeatureSelectionPage onSelectFeature={setSelectedFeature} />
   );
 };
 
