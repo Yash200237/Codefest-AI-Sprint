@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState, FormEvent, ChangeEvent } from "react";
+import { useState, FormEvent } from "react";
 import { Send, User, Bot } from "lucide-react";
 
 interface Message {
@@ -15,10 +15,31 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content: `Welcome to the sales report assistant! How can I assist you?`,
+      content: "Welcome to the sales report assistant! How can I assist you?",
+      timestamp: new Date(),
+    },
+    {
+      type: "user",
+      content: "This week, the revenue for carrots was $1,200, while potatoes brought in $1,800. Tomatoes generated $2,500 in revenue, lettuce earned $900, and spinach made $600.",
+      timestamp: new Date(),
+    },
+    {
+      type: "bot",
+      content: `Weekly Revenue Report:
+- Total Revenue: $7,000
+- Individual Item Revenues:
+  - Carrots: $1,200
+  - Potatoes: $1,800
+  - Tomatoes: $2,500
+  - Lettuce: $900
+  - Spinach: $600
+
+Summary:
+Tomatoes generated the highest revenue at $2,500, while Spinach generated the lowest revenue at $600. Focus on promoting Lettuce and Spinach to increase sales.`,
       timestamp: new Date(),
     },
   ]);
+
   const [input, setInput] = useState("");
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -34,7 +55,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
 
-    // Simulate bot response
+    // Simulated bot response with hardcoded timeout
     setTimeout(() => {
       const botResponse = `This is a response related to ${feature ?? "general"}.`;
       const botMessage: Message = {
@@ -42,8 +63,9 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
         content: botResponse,
         timestamp: new Date(),
       };
+
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+    }, 1000); // Hardcoded timeout
   };
 
   return (
@@ -89,10 +111,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
                   className={`p-4 rounded-2xl shadow-sm ${
                     message.type === "user"
                       ? "bg-orange-600 text-white"
-                      : "bg-white border-2 border-orange-100 text-orange-600"
+                      : "bg-white border-2 border-orange-100 text-orange-600 bot-message"
                   }`}
                 >
-                  <p className="text-sm mb-1">{message.content}</p>
+                  <p className="text-sm mb-1 whitespace-pre-wrap">{message.content}</p>
                   <span className="text-xs opacity-75">
                     {message.timestamp.toLocaleTimeString([], {
                       hour: "2-digit",
@@ -111,9 +133,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
           <input
             type="text"
             value={input}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setInput(e.target.value)
-            }
+            onChange={(e) => setInput(e.target.value)}
             placeholder={`Ask about ${feature ?? "general"}`}
             className="flex-grow p-4 border-2 border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900"
           />
