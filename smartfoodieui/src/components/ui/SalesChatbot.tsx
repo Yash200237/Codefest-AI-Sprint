@@ -22,13 +22,25 @@ const SalesChatbot = () => {
   const [selectedFeature, setSelectedFeature] = useState<Feature | null>(null);
 
   const handleFeatureSelect = (feature: Feature) => {
-    setSelectedFeature(feature);
+    setSelectedFeature((prevFeature) =>
+      prevFeature === feature ? null : feature
+    );
     let featureWelcomeMessage = "";
+
+    if (selectedFeature === feature) {
+      const botMessage: Message = {
+        type: "bot",
+        content: "Option unselected. Let me know how else I can assist you.",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, botMessage]);
+      return;
+    }
 
     switch (feature) {
       case "recommendation":
         featureWelcomeMessage =
-          "Let me help you find the best product recommendations for you.";
+          "Great choice! Let me help you find the best product recommendations for you.";
         break;
       case "forecast":
         featureWelcomeMessage =
