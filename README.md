@@ -17,6 +17,7 @@ cd Codefest-AI-Sprint
 ```sh
 setup.bat
 
+```sh
 call venv\Scripts\activate
 
 
