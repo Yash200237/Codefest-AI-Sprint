@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI
 from routers import summarize, forecast, feedback
 from fastapi.middleware.cors import CORSMiddleware
@@ -18,3 +19,5 @@ app.add_middleware(
 app.include_router(summarize.router, prefix="/api", tags=["Summarization"])
 app.include_router(forecast.router,prefix="/api",tags=["Forecast"])
 app.include_router(feedback.router,prefix='/api',tags=["Feedback"])
+
+
