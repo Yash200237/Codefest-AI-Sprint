@@ -75,6 +75,7 @@ async def recommend(customer: CustomerDetails):
         summarized_text = summarizer(
             plain_text, max_length=50, min_length=10, do_sample=False
         )[0]["summary_text"]
+        summarized_text = f"Thank you for providing the details. {summarized_text}"
     except Exception as e:
         raise HTTPException(
             status_code=500, detail=f"Error generating summary: {str(e)}"
