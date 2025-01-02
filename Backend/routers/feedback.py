@@ -18,7 +18,7 @@ async def analyze_feedback(input: FeedbackInput):
     """Analyze comma-separated reviews and provide positive/negative summaries."""
     try:
         # Split the input text into individual reviews by commas
-        reviews = [review.strip() for review in input.text.split('.')]
+        reviews = [review.strip() for review in input.text.split(',')]
 
         # Initialize results storage by sentiment
         sentiment_results = defaultdict(list)
