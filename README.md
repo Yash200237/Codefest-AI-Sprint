@@ -10,14 +10,14 @@ To install Rust, you can use `rustup`, which is the recommended way to install R
 ```sh 
 git clone https://https://github.com/Yash200237/Codefest-AI-Sprint 
 cd Codefest-AI-Sprint
-
-### Step 2: Run the Setup Script
+```
+### Step 2: Run the Script
 
 #### On Windows:
 ```sh
 setup.bat
-
+```
 ```sh
 call venv\Scripts\activate
-
+```
 

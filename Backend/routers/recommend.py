@@ -88,12 +88,16 @@ async def recommend(customer: CustomerDetails):
         summarized_text = summarizer(
             plain_text, max_length=50, min_length=10, do_sample=False
         )[0]["summary_text"]
+
         
         # Paraphrase the summarized response
         '''paraphrased_text = paraphraser(
             plain_text, max_length=100, num_return_sequences=1
         )[0]["generated_text"]'''
         
+
+        summarized_text = f"Thank you for providing the details. {summarized_text}"
+
     except Exception as e:
         raise HTTPException(
             status_code=500, detail=f"Error generating summary/paraphrase: {str(e)}"
