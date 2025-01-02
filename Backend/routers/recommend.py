@@ -6,17 +6,16 @@ router = APIRouter()
 
 recommendation_dict = {
     ("Small", "Restaurant"): [
-        {"id": 1, "name": "Tortilla Chips", "category": "Snacks"},
+        {"id": 1, "name": "Chips", "category": "Snacks"},
         {"id": 2, "name": "Salsa Sauce", "category": "Condiments"},
-        {"id": 18, "name": "Chili Peppers", "category": "Vegetables"},
-        {"id": 19, "name": "Lemonade", "category": "Beverages"},
+        {"id": 18, "name": "Beetroots", "category": "Vegetables"},
+        
     ],
     ("Medium", "Restaurant"): [
         {"id": 3, "name": "Cheddar Cheese", "category": "Dairy"},
-        {"id": 4, "name": "Bulk Rice", "category": "Grains"},
         {"id": 10, "name": "Pasta", "category": "Grains"},
-        {"id": 20, "name": "Ground Beef", "category": "Meat"},
-        {"id": 21, "name": "Tomato Sauce", "category": "Condiments"},
+        {"id": 20, "name": "Beef", "category": "Meat"},
+        
     ],
     ("Large", "School"): [
         {"id": 5, "name": "Olive Oil", "category": "Oils"},
@@ -49,9 +48,11 @@ recommendation_dict = {
     ],
 }
 
-
 # Summarization pipeline
 summarizer = pipeline("summarization", model="t5-small", tokenizer="t5-small")
+
+# Paraphrasing pipeline
+#paraphraser = pipeline("text2text-generation", model="t5-small")
 
 # Input schema
 class CustomerDetails(BaseModel):
@@ -82,14 +83,20 @@ async def recommend(customer: CustomerDetails):
         f"we recommend the following products: {', '.join(product_names)}."
     )
     
-    # Generate a summarized response
+    # Generate a detailed response
     try:
         summarized_text = summarizer(
             plain_text, max_length=50, min_length=10, do_sample=False
         )[0]["summary_text"]
+        
+        # Paraphrase the summarized response
+        '''paraphrased_text = paraphraser(
+            plain_text, max_length=100, num_return_sequences=1
+        )[0]["generated_text"]'''
+        
     except Exception as e:
         raise HTTPException(
-            status_code=500, detail=f"Error generating summary: {str(e)}"
+            status_code=500, detail=f"Error generating summary/paraphrase: {str(e)}"
         )
     
     return {"response": summarized_text}
