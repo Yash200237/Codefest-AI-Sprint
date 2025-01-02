@@ -4,39 +4,51 @@ from transformers import pipeline
 
 router = APIRouter()
 
-# Expanded dictionary for product recommendations
 recommendation_dict = {
     ("Small", "Restaurant"): [
         {"id": 1, "name": "Tortilla Chips", "category": "Snacks"},
         {"id": 2, "name": "Salsa Sauce", "category": "Condiments"},
+        {"id": 18, "name": "Chili Peppers", "category": "Vegetables"},
+        {"id": 19, "name": "Lemonade", "category": "Beverages"},
     ],
     ("Medium", "Restaurant"): [
         {"id": 3, "name": "Cheddar Cheese", "category": "Dairy"},
         {"id": 4, "name": "Bulk Rice", "category": "Grains"},
         {"id": 10, "name": "Pasta", "category": "Grains"},
+        {"id": 20, "name": "Ground Beef", "category": "Meat"},
+        {"id": 21, "name": "Tomato Sauce", "category": "Condiments"},
     ],
     ("Large", "School"): [
         {"id": 5, "name": "Olive Oil", "category": "Oils"},
         {"id": 4, "name": "Bulk Rice", "category": "Grains"},
         {"id": 9, "name": "Milk", "category": "Dairy"},
         {"id": 11, "name": "Apples", "category": "Fruits"},
+        {"id": 22, "name": "Bananas", "category": "Fruits"},
+        {"id": 23, "name": "Carrots", "category": "Vegetables"},
     ],
     ("Large", "Restaurant"): [
         {"id": 6, "name": "Coconut Oil", "category": "Oils"},
         {"id": 7, "name": "Oats", "category": "Grains"},
         {"id": 8, "name": "Lettuce", "category": "Vegetables"},
         {"id": 12, "name": "Tomatoes", "category": "Vegetables"},
+        {"id": 24, "name": "Chicken Breast", "category": "Meat"},
+        {"id": 25, "name": "Garlic", "category": "Spices"},
     ],
     ("Small", "Catering"): [
         {"id": 13, "name": "Bread Rolls", "category": "Bakery"},
         {"id": 14, "name": "Jam", "category": "Condiments"},
+        {"id": 26, "name": "Butter", "category": "Dairy"},
+        {"id": 27, "name": "Orange Juice", "category": "Beverages"},
     ],
     ("Medium", "Bakery"): [
         {"id": 15, "name": "Wheat", "category": "Grains"},
         {"id": 16, "name": "Milk", "category": "Dairy"},
         {"id": 17, "name": "Wine", "category": "Beverages"},
+        {"id": 28, "name": "Sugar", "category": "Condiments"},
+        {"id": 29, "name": "Eggs", "category": "Dairy"},
     ],
 }
+
 
 # Summarization pipeline
 summarizer = pipeline("summarization", model="t5-small", tokenizer="t5-small")
