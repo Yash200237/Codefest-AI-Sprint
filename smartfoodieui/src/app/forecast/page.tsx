@@ -12,27 +12,30 @@ export default function ForecastPage() {
   });
 
   const [prediction, setPrediction] = useState<{
-    predictedRevenue: number;
-    soldRatio: number;
+    totalRevenuePrediction: number;
+    soldRatioPrediction: number;
   } | null>(null);
   const [loading, setLoading] = useState(false);
 
   const categories = ["Fruits", "Vegetables", "Grains", "Dairy"];
 
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
+  // Month mapping: Name to Number
+  const monthMapping: { [key: string]: number } = {
+    January: 1,
+    February: 2,
+    March: 3,
+    April: 4,
+    May: 5,
+    June: 6,
+    July: 7,
+    August: 8,
+    September: 9,
+    October: 10,
+    November: 11,
+    December: 12,
+  };
+
+  const months = Object.keys(monthMapping); // Extract month names from the mapping
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -40,12 +43,35 @@ export default function ForecastPage() {
 
     setLoading(true);
     try {
-      // Replace with your actual API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setPrediction({
-        predictedRevenue: Math.random() * 10000 + 5000,
-        soldRatio: Math.random() * 0.5 + 0.3,
+      const monthNumber = monthMapping[formData.month];
+
+      // API Call to backend
+      const response = await fetch("http://127.0.0.1:8000/api/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          product_name: formData.productName,
+          category: formData.category,
+          month: monthNumber, // Send the numeric month to the backend
+        }),
       });
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch prediction from backend");
+      }
+
+      const data = await response.json();
+
+      // Update prediction state with API response
+      setPrediction({
+        totalRevenuePrediction: data.total_revenue_prediction,
+        soldRatioPrediction: data.sold_ratio_prediction,
+      });
+    } catch (error) {
+      console.error("Error fetching prediction:", error);
+      alert("Failed to fetch prediction. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -165,7 +191,7 @@ export default function ForecastPage() {
                     Predicted Revenue
                   </label>
                   <p className="text-2xl font-bold text-orange-500">
-                    ${prediction.predictedRevenue.toFixed(2)}
+                    ${prediction.totalRevenuePrediction.toFixed(2)}
                   </p>
                 </div>
                 <div>
@@ -173,7 +199,7 @@ export default function ForecastPage() {
                     Predicted Sold Ratio
                   </label>
                   <p className="text-2xl font-bold text-orange-500">
-                    {(prediction.soldRatio * 100).toFixed(1)}%
+                    {(prediction.soldRatioPrediction * 100).toFixed(1)}%
                   </p>
                 </div>
               </div>
