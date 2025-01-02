@@ -1,7 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState, FormEvent, ChangeEvent } from "react";
+import { useState, FormEvent, ChangeEvent,useEffect,useRef } from "react";
 import { Send, User, Bot } from "lucide-react";
+import axios from "axios";
 
 interface Message {
   type: "user" | "bot";
@@ -20,8 +21,16 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     },
   ]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  // Ref for scrolling to the latest message
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+  // Scroll to the latest message when messages update
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
 
@@ -33,20 +42,41 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
+    setLoading(true);
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botResponse = `Summary:
-- Positive: Customers appreciate the local artisan cheese selection, the seasonal offers on fresh produce, and discounts on bulk purchases of pantry essentials.
-- Negative: Delivery times are inconsistent, and the seafood section lacks variety (e.g., shellfish).
-`;
+    try {
+      // Make a POST request to the backend
+      const response = await axios.post("http://127.0.0.1:8000/api/analyze_feedback/", { text: input.trim() });
+      const botResponse = response.data.reviews_analysis;
+
       const botMessage: Message = {
         type: "bot",
         content: botResponse,
         timestamp: new Date(),
       };
+
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+
+      // Add a follow-up message after the analysis
+      setTimeout(() => {
+        const followUpMessage: Message = {
+          type: "bot",
+          content: "Do you have any other feedback options you'd like me to analyze?",
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, followUpMessage]);
+      }, 1000);
+    } catch (error) {
+      const errorMessage: Message = {
+        type: "bot",
+        content: "An error occurred while analyzing your feedback. Please try again later.",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setLoading(false);
+    }
+
   };
 
   return (
@@ -61,7 +91,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
         <h1 className="text-xl font-bold text-orange-600">Feedback Analyzer</h1>
       </header>
 
-      <div className="flex-grow overflow-auto px-4 py-6">
+      <div className="flex-grow overflow-auto px-4 py-6" style={{ maxHeight: "calc(100vh - 200px)" }}>
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.map((message, index) => (
             <div
