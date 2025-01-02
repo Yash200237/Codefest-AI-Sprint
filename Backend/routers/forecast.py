@@ -7,10 +7,10 @@ import pandas as pd
 router = APIRouter()
 
 #Loading the required models and encoder
-revenue_model_path = "./Models/sales_revenue_model.pkl"
-ratio_model_path ="./Models/sales_ratio_model.pkl"
-encoder_path ="./Models/sales_encoder.pkl"
-
+revenue_model_path = "./Models/sales_revenue_model (1).pkl"
+ratio_model_path ="./Models/sales_ratio_model (1).pkl"
+encoder_path ="./Models/sales_encoder (1).pkl"
+model_input_columns = joblib.load("./Models/model_input_columns.pkl")
 try:
     revenue_model = joblib.load(revenue_model_path)
     ratio_model =joblib.load(ratio_model_path)
@@ -34,15 +34,23 @@ def preprocess_input(data: dict, encoder):
     """
     # Convert input to DataFrame
     df = pd.DataFrame([data])
-    
-    # Transform categorical features using the encoder
+
+    # Encode categorical features
     encoded_features = encoder.transform(df[["product_name", "category"]])
+    encoded_df = pd.DataFrame(
+        encoded_features, 
+        columns=encoder.get_feature_names_out(["product_name", "category"])
+    )
     
-    # Combine with numerical features (e.g., month)
-    numerical_features = df[["month"]].values
-    final_features = np.hstack([encoded_features, numerical_features])
+    # Combine encoded features with numerical features (e.g., month)
+    numerical_features = df.drop(columns=["product_name", "category"]).reset_index(drop=True)
+    final_features = pd.concat([numerical_features, encoded_df], axis=1)
+    
+    # Ensure column order matches the training data
+    final_features = final_features.reindex(columns=model_input_columns, fill_value=0)
     
     return final_features
+
 
 def convert_numpy_float(obj):
     """
