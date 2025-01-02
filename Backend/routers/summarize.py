@@ -14,6 +14,6 @@ class SummarizationInput(BaseModel):
 async def summarize(input: SummarizationInput):
     """Summarize the given text."""
     summary = summarization_model(
-        input.text, max_length=100, min_length=25, do_sample=False
+        input.text, max_length=150, min_length=25, do_sample=False
     )
     return {"summary": summary[0]["summary_text"]}

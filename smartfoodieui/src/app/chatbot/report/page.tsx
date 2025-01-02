@@ -1,7 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent,ChangeEvent,useEffect,useRef } from "react";
 import { Send, User, Bot } from "lucide-react";
+import axios from "axios";
 
 interface Message {
   type: "user" | "bot";
@@ -18,31 +19,21 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
       content: "Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.",
       timestamp: new Date(),
     }
-    /*{
-      type: "user",
-      content: "This week, the revenue for carrots was $1,200, while potatoes brought in $1,800. Tomatoes generated $2,500 in revenue, lettuce earned $900, and spinach made $600.",
-      timestamp: new Date(),
-    },
-    {
-      type: "bot",
-      content: `Weekly Revenue Report:
-- Total Revenue: $7,000
-- Individual Item Revenues:
-  - Carrots: $1,200
-  - Potatoes: $1,800
-  - Tomatoes: $2,500
-  - Lettuce: $900
-  - Spinach: $600
-
-Summary:
-Tomatoes generated the highest revenue at $2,500, while Spinach generated the lowest revenue at $600. Focus on promoting Lettuce and Spinach to increase sales.`,
-      timestamp: new Date(),
-    },*/
+    
   ]);
 
   const [input, setInput] = useState("");
+  const [loading, setLoading] =useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  // Ref for scrolling to the latest message
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+  // Scroll to the latest message when messages update
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+
+  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
 
@@ -54,19 +45,13 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
+    setLoading(true);
 
-    // Simulated bot response with hardcoded timeout
-    setTimeout(() => {
-      const botResponse = `Weekly Revenue Report:
-- Total Revenue: $7,000
-- Individual Item Revenues:
-  - Carrots: $1,200
-  - Potatoes: $1,800
-  - Tomatoes: $2,500
-  - Lettuce: $900
-  - Spinach: $600
-Summary:
-Tomatoes generated the highest revenue at $2,500, while Spinach generated the lowest revenue at $600. Focus on promoting Lettuce and Spinach to increase sales.`;
+    try {
+      // Make a POST request to the backend
+      const response = await axios.post("http://127.0.0.1:8000/api/summarize/", { text: input.trim() });
+      const botResponse = response.data.summary;
+
       const botMessage: Message = {
         type: "bot",
         content: botResponse,
@@ -74,7 +59,26 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
       };
 
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000); // Hardcoded timeout
+
+      // Add a follow-up message after the analysis
+      setTimeout(() => {
+        const followUpMessage: Message = {
+          type: "bot",
+          content: "Do you have any other data you'd like me to summarize?",
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, followUpMessage]);
+      }, 1000);
+    } catch (error) {
+      const errorMessage: Message = {
+        type: "bot",
+        content: "An error occurred while analyzing your data. Please try again later.",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -91,7 +95,7 @@ Tomatoes generated the highest revenue at $2,500, while Spinach generated the lo
         </h1>
       </header>
 
-      <div className="flex-grow overflow-auto px-4 py-6">
+      <div className="flex-grow overflow-auto px-4 py-6" style={{ maxHeight: "calc(100vh - 200px)" }}>
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.map((message, index) => (
             <div
