@@ -25,7 +25,7 @@ recommendation_dict = {
         {"id": 22, "name": "Bananas", "category": "Fruits"},
         {"id": 23, "name": "Carrots", "category": "Vegetables"},
     ],
-    ("Large", "Restaurant"): [
+    ("Large", "Catering"): [
         {"id": 6, "name": "Coconut Oil", "category": "Oils"},
         {"id": 7, "name": "Oats", "category": "Grains"},
         {"id": 8, "name": "Lettuce", "category": "Vegetables"},
