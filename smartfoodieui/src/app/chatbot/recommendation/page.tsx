@@ -24,8 +24,9 @@ export default function ChatbotPage({
     },
   ]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
 
@@ -37,18 +38,58 @@ export default function ChatbotPage({
 
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
+    setLoading(true);
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botResponse =
-        "Thank you for providing the details. Based on your input, here are some product recommendations: \n- Mixed Lettuce \n- Roma Tomatoes \n- Yellow Onions";
+    try {
+      // Parse the user input: Split input into businessName, category, and scale
+      const [businessName, category, scale] = input
+        .split(",")
+        .map((item) => item.trim());
+
+      // Validate that category and scale are present
+      if (!category || !scale) {
+        throw new Error(
+          "Invalid input format. Please provide category and scale."
+        );
+      }
+
+      // Send only category and scale to the backend API
+      const response = await fetch("http://127.0.0.1:8000/api/recommend/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          company_type: category,
+          scale,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch recommendations");
+      }
+
+      const data = await response.json();
+
+      // Append the API response to the chat
       const botMessage: Message = {
         type: "bot",
-        content: botResponse,
+        content: data.response,
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, botMessage]);
-    }, 1000);
+    } catch (error) {
+      console.error("Error fetching recommendations:", error);
+      const errorMessage: Message = {
+        type: "bot",
+        content:
+          "An error occurred while fetching recommendations. Please try again.",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -114,7 +155,10 @@ export default function ChatbotPage({
 
       {/* Updated section for the fixed input tab at the bottom center */}
       <div className="fixed bottom-0 inset-x-0 flex items-center justify-center bg-white border-t shadow-lg px-4 py-4">
-        <form onSubmit={handleSubmit} className="flex space-x-4 w-full max-w-3xl">
+        <form
+          onSubmit={handleSubmit}
+          className="flex space-x-4 w-full max-w-3xl"
+        >
           <input
             type="text"
             value={input}
@@ -135,4 +179,3 @@ export default function ChatbotPage({
     </div>
   );
 }
-
