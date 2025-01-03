@@ -8,7 +8,7 @@ SmartFoodie is a robust full-stack application with a Next.jsfrontend and a Fast
 Before you begin, ensure you have the following installed:
 * Node.js and npm (for frontend)
 * Python (version 3.10-3.12)
-* Rust and Cargo
+* Rust and Cargo (To ensure transformers installation is error free)
 * Git
 
 ## Backend Setup
