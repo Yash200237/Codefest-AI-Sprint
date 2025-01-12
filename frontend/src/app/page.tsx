@@ -1,8 +1,22 @@
 "use client";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   const router = useRouter();
+
+  // Client-side authentication check
+  useEffect(() => {
+    const token = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith("auth_token="))
+      ?.split("=")[1]; // Extract JWT token from cookies
+
+    if (!token) {
+      // If token is missing, redirect to login page
+      router.push("/login");
+    }
+  }, [router]);
 
   const handleNavigation = (feature: string) => {
     if (feature === "forecast") {
