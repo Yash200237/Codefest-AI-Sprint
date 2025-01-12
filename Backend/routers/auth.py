@@ -39,23 +39,6 @@ def create_access_token(data: dict):
     to_encode.update({"exp": expire})
     return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
 
-# Signup endpoint
-@router.post("/signup")
-def signup(user: SignupRequest, db: Session = Depends(get_db)):
-    # Check if the user already exists
-    existing_user = db.query(User).filter(User.email == user.email).first()
-    if existing_user:
-        raise HTTPException(status_code=400, detail="Email already registered")
-
-    # Hash the password
-    hashed_password = bcrypt.hash(user.password)
-
-    # Create a new user
-    new_user = User(name=user.name, email=user.email, password_hash=hashed_password)
-    db.add(new_user)
-    db.commit()
-
-    return {"message": "User created successfully"}
 
 # Login endpoint
 @router.post("/login", response_model=TokenResponse)
