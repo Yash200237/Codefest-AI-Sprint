@@ -41,6 +41,8 @@ source venv/bin/activate
 ### 4. Install Dependencies
 ```bash
 pip install fastapi uvicorn scikit-learn joblib pandas xgboost torch transformers
+pip install mysql-connector-python sqlalchemy databases
+pip install passlib[bcrypt] 
 ```
 
 ### 5. Run Backend Server

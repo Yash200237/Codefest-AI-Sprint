@@ -1,6 +1,6 @@
 
 from fastapi import FastAPI
-from routers import summarize, forecast, feedback,recommend
+from routers import summarize, forecast, feedback,recommend,auth
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Sales Consultant API", version = '1.0.0')
@@ -20,5 +20,6 @@ app.include_router(summarize.router, prefix="/api", tags=["Summarization"])
 app.include_router(forecast.router,prefix="/api",tags=["Forecast"])
 app.include_router(feedback.router,prefix='/api',tags=["Feedback"])
 app.include_router(recommend.router,prefix='/api',tags=["Recommendation"])
+app.include_router(auth.router, prefix="/api", tags=["Authentication"])
 
 
