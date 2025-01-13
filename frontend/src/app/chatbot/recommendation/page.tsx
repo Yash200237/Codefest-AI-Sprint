@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState, FormEvent, ChangeEvent } from "react";
 import { Send, User, Bot } from "lucide-react";
+import useAuth from "../../hooks/useAuth";
 
 interface Message {
   type: "user" | "bot";
@@ -16,6 +17,8 @@ export default function ChatbotPage({
 }) {
   const { feature } = params || {}; // Safely access params
   const router = useRouter();
+  const isAuthenticated = useAuth();
+
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
@@ -91,6 +94,10 @@ export default function ChatbotPage({
       setLoading(false);
     }
   };
+
+  if (!isAuthenticated) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="flex flex-col h-screen bg-orange-50">

@@ -1,9 +1,16 @@
 
-from fastapi import FastAPI
+from fastapi import FastAPI,HTTPException,Depends,status
 from routers import summarize, forecast, feedback,recommend,auth
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from typing import Annotated
+import db_models.user as user
+from database import engine,SessionLocal,Base
+from sqlalchemy.orm import Session
 
 app = FastAPI(title="Sales Consultant API", version = '1.0.0')
+
+Base.metadata.create_all(bind=engine)
 
 origins=[
     "http://localhost", 

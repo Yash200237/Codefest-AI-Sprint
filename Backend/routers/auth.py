@@ -1,66 +1,66 @@
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException, Depends, status
+from fastapi.responses import JSONResponse
+from typing import Annotated
+from datetime import datetime, timedelta, timezone
 from pydantic import BaseModel
-from sqlalchemy.orm import Session
-from passlib.hash import bcrypt
-from datetime import datetime, timedelta
-from jose import jwt, JWTError
-from database import get_db  # Assuming you have a database connection setup
-from Models import User      # Your SQLAlchemy User model
-from fastapi.security import OAuth2PasswordBearer
+from fastapi.security import OAuth2PasswordRequestForm
+from jose import jwt
+from dotenv import load_dotenv
+import os
+from db_models.user import User
+from db_models.deps import bcrypt_context, db_dependency,get_current_user
 
-# Configuration for JWT
-SECRET_KEY = "your_super_secret_key"  # Keep this secret and store in .env
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+load_dotenv()
 
 router = APIRouter()
 
-# OAuth2 scheme to handle Bearer token
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
+SECRET_KEY = os.getenv("AUTH_SECRET_KEY")
+ALGORITHM = os.getenv("AUTH_ALGORITHM")
+
 
 # Pydantic models for request validation
-class SignupRequest(BaseModel):
-    name: str
-    email: str
-    password: str
 
 class LoginRequest(BaseModel):
-    email: str
+    username: str
     password: str
 
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str
 
+
+def authenticate_user(username: str, password: str, db):
+        user = db.query(User).filter(User.username == username).first()
+        if not user or not bcrypt_context.verify(password, user.hashed_password):
+            return False
+        return user
+
+
 # Helper function to create JWT
-def create_access_token(data: dict):
-    to_encode = data.copy()
-    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    to_encode.update({"exp": expire})
-    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+def create_access_token(username: str, user_id: int, expires_delta: timedelta ):
+    encode = {'sub': username, 'id': user_id}
+    expires = datetime.now(timezone.utc) + expires_delta
+    encode.update({"exp": expires})
+    return jwt.encode(encode, SECRET_KEY, algorithm=ALGORITHM)
 
 
 # Login endpoint
 @router.post("/login", response_model=TokenResponse)
-def login(user: LoginRequest, db: Session = Depends(get_db)):
-    # Check if the user exists
-    db_user = db.query(User).filter(User.email == user.email).first()
-    if not db_user or not bcrypt.verify(user.password, db_user.password_hash):
-        raise HTTPException(status_code=401, detail="Invalid email or password")
-
-    # Generate JWT token
-    access_token = create_access_token(data={"user_id": db_user.id, "email": db_user.email})
-
-    return {"access_token": access_token, "token_type": "bearer"}
-
-# Protected route example
-@router.get("/protected")
-def protected_route(token: str = Depends(oauth2_scheme)):
+async def login(user: LoginRequest, db: db_dependency):
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        user_id = payload.get("user_id")
-        if not user_id:
-            raise HTTPException(status_code=401, detail="Invalid token")
-        return {"message": "This is a protected route", "user_id": user_id}
-    except JWTError:
-        raise HTTPException(status_code=401, detail="Invalid or expired token")
+        user = authenticate_user(user.username, user.password, db)
+        if not user:
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid username or password")
+
+        token = create_access_token(user.username, user.id, timedelta(minutes=20))
+        return {"access_token": token, "token_type": "bearer"}
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="An error occurred during login")
+
+
+@router.get("/validate-token")
+async def validate_token(user: dict = Depends(get_current_user)):
+    return {"message": "Token is valid", "user": user}
+

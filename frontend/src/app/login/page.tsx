@@ -4,25 +4,31 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Login() {
-  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [formData, setFormData] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
   const router = useRouter();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/auth/login", {
+      const response = await fetch("http://127.0.0.1:8000/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-        credentials: "include", // Include HttpOnly cookie
       });
 
       if (!response.ok) {
         const error = await response.json();
-        throw new Error(error.detail);
+        // Extract the error detail or default message
+        const errorMessage = Array.isArray(error.detail)
+          ? error.detail.map((err: any) => err.msg).join(", ") // Handle list of errors
+          : error.detail || "Login failed";
+
+        throw new Error(errorMessage);
       }
 
+      const data = await response.json();
+      localStorage.setItem("auth_token", data.access_token); // Store token in local storage
       router.push("/");
     } catch (err: any) {
       setError(err.message || "Failed to login.");
@@ -35,10 +41,12 @@ export default function Login() {
       {error && <p className="text-red-500">{error}</p>}
       <form onSubmit={handleLogin} className="space-y-4">
         <input
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          type="text"
+          placeholder="Username"
+          value={formData.username}
+          onChange={(e) =>
+            setFormData({ ...formData, username: e.target.value })
+          }
           className="block w-full p-2 border"
           required
         />

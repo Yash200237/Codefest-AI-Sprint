@@ -2,9 +2,12 @@
 
 import { useRouter } from "next/navigation";
 import { useState, FormEvent } from "react";
+import useAuth from "../hooks/useAuth";
 
 export default function ForecastPage() {
   const router = useRouter();
+  const isAuthenticated = useAuth();
+
   const [formData, setFormData] = useState({
     productName: "",
     category: "",
@@ -76,6 +79,10 @@ export default function ForecastPage() {
       setLoading(false);
     }
   };
+
+  if (!isAuthenticated) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-gray-800">
