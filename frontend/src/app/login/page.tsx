@@ -45,7 +45,7 @@ export default function Login() {
         backgroundRepeat: "no-repeat", // Prevents tiling of the image
       }}
     >
-      <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-orange-800 dark:border-gray-700">
+      <div className="p-8 w-full  max-w-xl max-h-lg  rounded-lg bg-orange-600 text-white text-lg font-semibold hover:bg-orange-690 hover:scale-105 transition-transform duration-200 ease-out">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-4xl font-bold text-white-600 mb-6 tracking-wide animate-pulse text-center flex flex-col items-center">
             Login
@@ -63,7 +63,7 @@ export default function Login() {
                 onChange={(e) =>
                   setFormData({ ...formData, username: e.target.value })
                 }
-                className="bg-gray-50 border border-gray-300 text-orange-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-orange-50 dark:border-gray-600 dark:placeholder-orange-400 dark:text-orange dark:focus:ring-orange-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-orange-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-orange-50 dark:border-gray-600 dark:placeholder-orange-400 dark:text-orange dark:focus:ring-orange-500 dark:focus:border-orange-500"
                 required
               />
             </div>
@@ -86,7 +86,7 @@ export default function Login() {
 
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-orange-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+              className="flex w-full justify-center rounded-md bg-orange-400 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
             >
               Login
             </button>
