@@ -51,6 +51,8 @@ source venv/bin/activate
 pip install fastapi uvicorn scikit-learn joblib pandas xgboost torch transformers
 pip install mysql-connector-python sqlalchemy databases
 pip install passlib[bcrypt]
+pip install python-dotenv
+pip install python-jose
 ```
 
 ### 5. Run Backend Server
