@@ -19,6 +19,11 @@ export default function HomePage() {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("auth_token"); // Remove the authentication token
+    router.push("/login"); // Redirect to the login page
+  };
+
   return (
     <div
       className="flex flex-col h-screen bg-orange-50 justify-center items-center"
@@ -29,6 +34,14 @@ export default function HomePage() {
         backgroundRepeat: "no-repeat", // Prevents tiling of the image
       }}
     >
+      {/* Logout Button */}
+      <button
+        onClick={handleLogout}
+        className="absolute top-4 right-4 p-3 px-5 text-lg bg-gradient-to-r from-red-600 to-red-500 text-white font-bold rounded-lg shadow-lg hover:scale-110 hover:shadow-md hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 transition-all duration-300"
+      >
+        Logout
+      </button>
+
       <h1 className="text-6xl font-bold text-orange-600 mb-6 tracking-wide animate-pulse text-center flex flex-col items-center">
         <span className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">
           SmartFoodie
