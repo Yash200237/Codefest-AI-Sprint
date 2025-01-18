@@ -52,7 +52,7 @@ pip install fastapi uvicorn scikit-learn joblib pandas xgboost torch transformer
 pip install mysql-connector-python sqlalchemy databases
 pip install passlib[bcrypt]
 pip install python-dotenv
-pip install python-jose
+pip install python-jose pymysql
 ```
 
 ### 5. Run Backend Server
