@@ -23,8 +23,13 @@ export default function ChatbotPage({
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content:
-        "Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.",
+      content: `Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.Please share your data in the following format:
+        Region: [Enter region name];  
+        Product Categories: [List categories, e.g., Fruits, Snacks];  
+        Total Revenue: [Enter total revenue amount];  
+        Growth Trend: [Enter growth trend in percentage];  
+        Units Sold: [Enter total units sold];  
+        Breakdown: Category1:[Number of units sold]; Category2:[Number of units sold]; [Add more categories as needed]`,
       timestamp: new Date(),
     },
   ]);
