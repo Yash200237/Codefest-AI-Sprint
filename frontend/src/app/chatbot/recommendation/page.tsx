@@ -1,4 +1,3 @@
-
 "use client";
 import { useRouter } from "next/navigation";
 import { useState, FormEvent, ChangeEvent, useEffect, useRef } from "react";
@@ -51,7 +50,8 @@ export default function ChatbotPage() {
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     const { name, value, type } = e.target;
-    const finalValue = type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
+    const finalValue =
+      type === "checkbox" ? (e.target as HTMLInputElement).checked : value;
     setFormData((prev) => ({ ...prev, [name]: finalValue }));
   };
 
@@ -87,7 +87,8 @@ export default function ChatbotPage() {
       setTimeout(() => {
         const followUpMessage: Message = {
           type: "bot",
-          content: "If you need any assistance I'm here to help you.",
+          content:
+            "If you need any further assistance feel free to send another request.",
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, followUpMessage]);
@@ -96,7 +97,8 @@ export default function ChatbotPage() {
       console.error("Error fetching recommendations:", error);
       const errorMessage: Message = {
         type: "bot",
-        content: "An error occurred while fetching recommendations. Please try again.",
+        content:
+          "An error occurred while fetching recommendations. Please try again.",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);
@@ -135,7 +137,9 @@ export default function ChatbotPage() {
         >
           Back to Menu
         </button>
-        <h1 className="text-xl font-bold text-orange-600">Product Recommendation</h1>
+        <h1 className="text-xl font-bold text-orange-600">
+          Product Recommendation
+        </h1>
       </header>
 
       <div className="flex-grow overflow-auto px-4 py-6">
@@ -211,174 +215,174 @@ export default function ChatbotPage() {
               <option value="Restaurant">Restaurant</option>
             </select>
             {/* Subcategory */}
-  <select
-    name="subcategory"
-    value={formData.subcategory}
-    onChange={handleInputChange}
-    required
-    className="w-full border p-2 rounded"
-  >
-    <option value="" disabled>
-      Select Subcategory
-    </option>
-    {[
-      "Hospital",
-      "Meal Delivery Service",
-      "Pastry Shop",
-      "Business Hotel",
-      "Corporate Cafeteria",
-      "University Dining",
-      "Wholesale Bakery",
-      "Food Truck",
-      "Ethnic Restaurant",
-      "Pizza Restaurant",
-      "Cafe-Bakery",
-      "Luxury Hotel",
-      "Fine Dining",
-      "Resort",
-      "Corporate Catering",
-      "Event Catering",
-      "Seafood Restaurant",
-      "Wedding Catering",
-      "Extended Stay Hotel",
-      "Casual Dining",
-      "Nursing Home",
-      "Boutique Hotel",
-      "Artisan Bakery",
-      "Steakhouse",
-      "School Cafeteria",
-      "Fast Casual",
-      "Retail Bakery",
-    ].map((subcategory) => (
-      <option key={subcategory} value={subcategory}>
-        {subcategory}
-      </option>
-    ))}
-  </select>
+            <select
+              name="subcategory"
+              value={formData.subcategory}
+              onChange={handleInputChange}
+              required
+              className="w-full border p-2 rounded"
+            >
+              <option value="" disabled>
+                Select Subcategory
+              </option>
+              {[
+                "Hospital",
+                "Meal Delivery Service",
+                "Pastry Shop",
+                "Business Hotel",
+                "Corporate Cafeteria",
+                "University Dining",
+                "Wholesale Bakery",
+                "Food Truck",
+                "Ethnic Restaurant",
+                "Pizza Restaurant",
+                "Cafe-Bakery",
+                "Luxury Hotel",
+                "Fine Dining",
+                "Resort",
+                "Corporate Catering",
+                "Event Catering",
+                "Seafood Restaurant",
+                "Wedding Catering",
+                "Extended Stay Hotel",
+                "Casual Dining",
+                "Nursing Home",
+                "Boutique Hotel",
+                "Artisan Bakery",
+                "Steakhouse",
+                "School Cafeteria",
+                "Fast Casual",
+                "Retail Bakery",
+              ].map((subcategory) => (
+                <option key={subcategory} value={subcategory}>
+                  {subcategory}
+                </option>
+              ))}
+            </select>
 
-  {/* Scale */}
-  <select
-    name="scale"
-    value={formData.scale}
-    onChange={handleInputChange}
-    required
-    className="w-full border p-2 rounded"
-  >
-    <option value="" disabled>
-      Select Scale
-    </option>
-    <option value="Large">Large</option>
-    <option value="Medium">Medium</option>
-    <option value="Small">Small</option>
-  </select>
+            {/* Scale */}
+            <select
+              name="scale"
+              value={formData.scale}
+              onChange={handleInputChange}
+              required
+              className="w-full border p-2 rounded"
+            >
+              <option value="" disabled>
+                Select Scale
+              </option>
+              <option value="Large">Large</option>
+              <option value="Medium">Medium</option>
+              <option value="Small">Small</option>
+            </select>
 
-  {/* Location */}
-  <select
-    name="location"
-    value={formData.location}
-    onChange={handleInputChange}
-    required
-    className="w-full border p-2 rounded"
-  >
-    <option value="" disabled>
-      Select Location
-    </option>
-    <option value="Urban">Urban</option>
-    <option value="Suburban">Suburban</option>
-    <option value="Rural">Rural</option>
-  </select>
+            {/* Location */}
+            <select
+              name="location"
+              value={formData.location}
+              onChange={handleInputChange}
+              required
+              className="w-full border p-2 rounded"
+            >
+              <option value="" disabled>
+                Select Location
+              </option>
+              <option value="Urban">Urban</option>
+              <option value="Suburban">Suburban</option>
+              <option value="Rural">Rural</option>
+            </select>
 
-  {/* Years in Business */}
-  <input
-    type="number"
-    name="years_in_business"
-    value={formData.years_in_business}
-    onChange={handleInputChange}
-    required
-    placeholder="Years in Business"
-    className="w-full border p-2 rounded"
-  />
+            {/* Years in Business */}
+            <input
+              type="number"
+              name="years_in_business"
+              value={formData.years_in_business}
+              onChange={handleInputChange}
+              required
+              placeholder="Years in Business"
+              className="w-full border p-2 rounded"
+            />
 
-  {/* Employees */}
-  <input
-    type="number"
-    name="employees"
-    value={formData.employees}
-    onChange={handleInputChange}
-    required
-    placeholder="Number of Employees"
-    className="w-full border p-2 rounded"
-  />
+            {/* Employees */}
+            <input
+              type="number"
+              name="employees"
+              value={formData.employees}
+              onChange={handleInputChange}
+              required
+              placeholder="Number of Employees"
+              className="w-full border p-2 rounded"
+            />
 
-  {/* Estimated Daily Customers */}
-  <input
-    type="number"
-    name="estimated_daily_customers"
-    value={formData.estimated_daily_customers}
-    onChange={handleInputChange}
-    required
-    placeholder="Estimated Daily Customers"
-    className="w-full border p-2 rounded"
-  />
+            {/* Estimated Daily Customers */}
+            <input
+              type="number"
+              name="estimated_daily_customers"
+              value={formData.estimated_daily_customers}
+              onChange={handleInputChange}
+              required
+              placeholder="Estimated Daily Customers"
+              className="w-full border p-2 rounded"
+            />
 
-  {/* Average Order Size */}
-  <input
-    type="number"
-    step="0.01"
-    name="avg_order_size"
-    value={formData.avg_order_size}
-    onChange={handleInputChange}
-    required
-    placeholder="Average Order Size"
-    className="w-full border p-2 rounded"
-  />
+            {/* Average Order Size */}
+            <input
+              type="number"
+              step="0.01"
+              name="avg_order_size"
+              value={formData.avg_order_size}
+              onChange={handleInputChange}
+              required
+              placeholder="Average Order Size"
+              className="w-full border p-2 rounded"
+            />
 
-  {/* Storage Capacity */}
-  <select
-    name="storage_capacity"
-    value={formData.storage_capacity}
-    onChange={handleInputChange}
-    required
-    className="w-full border p-2 rounded"
-  >
-    <option value="" disabled>
-      Select Storage Capacity
-    </option>
-    <option value="Large">Large</option>
-    <option value="Medium">Medium</option>
-    <option value="Limited">Limited</option>
-  </select>
+            {/* Storage Capacity */}
+            <select
+              name="storage_capacity"
+              value={formData.storage_capacity}
+              onChange={handleInputChange}
+              required
+              className="w-full border p-2 rounded"
+            >
+              <option value="" disabled>
+                Select Storage Capacity
+              </option>
+              <option value="Large">Large</option>
+              <option value="Medium">Medium</option>
+              <option value="Limited">Limited</option>
+            </select>
 
-  {/* Sustainability Focus */}
-  <div className="flex items-center space-x-2">
-    <label htmlFor="sustainability_focus" className="text-sm">
-      Sustainability Focus:
-    </label>
-    <input
-      type="checkbox"
-      id="sustainability_focus"
-      name="sustainability_focus"
-      checked={formData.sustainability_focus}
-      onChange={handleInputChange}
-      className="w-5 h-5"
-    />
-  </div>
+            {/* Sustainability Focus */}
+            <div className="flex items-center space-x-2">
+              <label htmlFor="sustainability_focus" className="text-sm">
+                Sustainability Focus:
+              </label>
+              <input
+                type="checkbox"
+                id="sustainability_focus"
+                name="sustainability_focus"
+                checked={formData.sustainability_focus}
+                onChange={handleInputChange}
+                className="w-5 h-5"
+              />
+            </div>
 
-  {/* Quality Preference */}
-  <select
-    name="quality_preference"
-    value={formData.quality_preference}
-    onChange={handleInputChange}
-    required
-    className="w-full border p-2 rounded"
-  >
-    <option value="" disabled>
-      Select Quality Preference
-    </option>
-    <option value="Economy">Economy</option>
-    <option value="Standard">Standard</option>
-    <option value="Premium">Premium</option>
-  </select>
+            {/* Quality Preference */}
+            <select
+              name="quality_preference"
+              value={formData.quality_preference}
+              onChange={handleInputChange}
+              required
+              className="w-full border p-2 rounded"
+            >
+              <option value="" disabled>
+                Select Quality Preference
+              </option>
+              <option value="Economy">Economy</option>
+              <option value="Standard">Standard</option>
+              <option value="Premium">Premium</option>
+            </select>
             {/* Add other fields here following the same pattern */}
             <button
               type="submit"
@@ -403,4 +407,3 @@ export default function ChatbotPage() {
     </div>
   );
 }
-
