@@ -87,7 +87,7 @@ export default function ChatbotPage() {
       setTimeout(() => {
         const followUpMessage: Message = {
           type: "bot",
-          content: "Would you like to request another recommendation?",
+          content: "If you need any assistance I'm here to help you.",
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, followUpMessage]);
