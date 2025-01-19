@@ -1,8 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState, FormEvent, ChangeEvent,useEffect,useRef } from "react";
+import { useState, FormEvent, ChangeEvent, useEffect, useRef } from "react";
 import { Send, User, Bot } from "lucide-react";
 import axios from "axios";
+import useAuth from "../../hooks/useAuth";
 
 interface Message {
   type: "user" | "bot";
@@ -10,9 +11,15 @@ interface Message {
   timestamp: Date;
 }
 
-export default function ChatbotPage({ params }: { params: { feature?: string } }) {
+export default function ChatbotPage({
+  params,
+}: {
+  params: { feature?: string };
+}) {
   const { feature } = params || {}; // Safely access params
   const router = useRouter();
+  const isAuthenticated = useAuth();
+
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
@@ -30,7 +37,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
 
@@ -46,7 +53,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 
     try {
       // Make a POST request to the backend
-      const response = await axios.post("http://127.0.0.1:8000/api/analyze_feedback/", { text: input.trim() });
+      const response = await axios.post(
+        "http://127.0.0.1:8000/api/analyze_feedback/",
+        { text: input.trim() }
+      );
       const botResponse = response.data.reviews_analysis;
 
       const botMessage: Message = {
@@ -61,7 +71,8 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
       setTimeout(() => {
         const followUpMessage: Message = {
           type: "bot",
-          content: "Do you have any other feedback options you'd like me to analyze?",
+          content:
+            "Do you have any other feedback options you'd like me to analyze?",
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, followUpMessage]);
@@ -69,15 +80,19 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     } catch (error) {
       const errorMessage: Message = {
         type: "bot",
-        content: "An error occurred while analyzing your feedback. Please try again later.",
+        content:
+          "An error occurred while analyzing your feedback. Please try again later.",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setLoading(false);
     }
-
   };
+
+  if (!isAuthenticated) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="flex flex-col h-screen bg-orange-50">
@@ -91,7 +106,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
         <h1 className="text-xl font-bold text-orange-600">Feedback Analyzer</h1>
       </header>
 
-      <div className="flex-grow overflow-auto px-4 py-6" style={{ maxHeight: "calc(100vh - 200px)" }}>
+      <div
+        className="flex-grow overflow-auto px-4 py-6"
+        style={{ maxHeight: "calc(100vh - 200px)" }}
+      >
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.map((message, index) => (
             <div
@@ -138,7 +156,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
       </div>
 
       <div className="fixed bottom-0 inset-x-0 flex items-center justify-center bg-white border-t shadow-lg px-4 py-4">
-        <form onSubmit={handleSubmit} className="flex space-x-4 w-full max-w-3xl">
+        <form
+          onSubmit={handleSubmit}
+          className="flex space-x-4 w-full max-w-3xl"
+        >
           <input
             type="text"
             value={input}
@@ -159,5 +180,3 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     </div>
   );
 }
-
-

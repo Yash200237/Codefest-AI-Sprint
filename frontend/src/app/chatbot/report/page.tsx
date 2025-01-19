@@ -1,8 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState, FormEvent,ChangeEvent,useEffect,useRef } from "react";
+import { useState, FormEvent, ChangeEvent, useEffect, useRef } from "react";
 import { Send, User, Bot } from "lucide-react";
 import axios from "axios";
+import useAuth from "../../hooks/useAuth";
 
 interface Message {
   type: "user" | "bot";
@@ -10,20 +11,26 @@ interface Message {
   timestamp: Date;
 }
 
-export default function ChatbotPage({ params }: { params: { feature?: string } }) {
+export default function ChatbotPage({
+  params,
+}: {
+  params: { feature?: string };
+}) {
   const { feature } = params || {}; // Safely access params
   const router = useRouter();
+  const isAuthenticated = useAuth();
+
   const [messages, setMessages] = useState<Message[]>([
     {
       type: "bot",
-      content: "Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.",
+      content:
+        "Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.",
       timestamp: new Date(),
-    }
-    
+    },
   ]);
 
   const [input, setInput] = useState("");
-  const [loading, setLoading] =useState(false);
+  const [loading, setLoading] = useState(false);
 
   // Ref for scrolling to the latest message
   const bottomRef = useRef<HTMLDivElement | null>(null);
@@ -32,8 +39,7 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-
-  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input.trim()) return;
 
@@ -49,7 +55,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 
     try {
       // Make a POST request to the backend
-      const response = await axios.post("http://127.0.0.1:8000/api/summarize/", { text: input.trim() });
+      const response = await axios.post(
+        "http://127.0.0.1:8000/api/summarize/",
+        { text: input.trim() }
+      );
       const botResponse = response.data.summary;
 
       const botMessage: Message = {
@@ -72,7 +81,8 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     } catch (error) {
       const errorMessage: Message = {
         type: "bot",
-        content: "An error occurred while analyzing your data. Please try again later.",
+        content:
+          "An error occurred while analyzing your data. Please try again later.",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);
@@ -80,6 +90,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
       setLoading(false);
     }
   };
+
+  if (!isAuthenticated) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="flex flex-col h-screen bg-orange-50">
@@ -95,18 +109,27 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
         </h1>
       </header>
 
-      <div className="flex-grow overflow-auto px-4 py-6" style={{ maxHeight: "calc(100vh - 200px)" }}>
+      <div
+        className="flex-grow overflow-auto px-4 py-6"
+        style={{ maxHeight: "calc(100vh - 200px)" }}
+      >
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`flex ${message.type === "user" ? "justify-end" : "justify-start"}`}
+              className={`flex ${
+                message.type === "user" ? "justify-end" : "justify-start"
+              }`}
             >
               <div
-                className={`flex items-start space-x-2 max-w-[80%] ${message.type === "user" ? "flex-row-reverse" : "flex-row"}`}
+                className={`flex items-start space-x-2 max-w-[80%] ${
+                  message.type === "user" ? "flex-row-reverse" : "flex-row"
+                }`}
               >
                 <div
-                  className={`rounded-full p-2 ${message.type === "user" ? "bg-orange-100" : "bg-white"}`}
+                  className={`rounded-full p-2 ${
+                    message.type === "user" ? "bg-orange-100" : "bg-white"
+                  }`}
                 >
                   {message.type === "user" ? (
                     <User className="w-5 h-5 text-orange-600" />
@@ -115,9 +138,15 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
                   )}
                 </div>
                 <div
-                  className={`p-4 rounded-2xl shadow-sm ${message.type === "user" ? "bg-orange-600 text-white" : "bg-white border-2 border-orange-100 text-orange-600 bot-message"}`}
+                  className={`p-4 rounded-2xl shadow-sm ${
+                    message.type === "user"
+                      ? "bg-orange-600 text-white"
+                      : "bg-white border-2 border-orange-100 text-orange-600 bot-message"
+                  }`}
                 >
-                  <p className="text-sm mb-1 whitespace-pre-wrap">{message.content}</p>
+                  <p className="text-sm mb-1 whitespace-pre-wrap">
+                    {message.content}
+                  </p>
                   <span className="text-xs opacity-75">
                     {message.timestamp.toLocaleTimeString([], {
                       hour: "2-digit",
@@ -133,7 +162,10 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
 
       {/* Center the input box at the bottom */}
       <div className="bg-white border-t px-4 py-4 shadow-lg flex justify-center items-center fixed bottom-0 left-0 right-0">
-        <form onSubmit={handleSubmit} className="flex space-x-4 w-full max-w-3xl">
+        <form
+          onSubmit={handleSubmit}
+          className="flex space-x-4 w-full max-w-3xl"
+        >
           <input
             type="text"
             value={input}
@@ -152,5 +184,3 @@ export default function ChatbotPage({ params }: { params: { feature?: string } }
     </div>
   );
 }
-
-
