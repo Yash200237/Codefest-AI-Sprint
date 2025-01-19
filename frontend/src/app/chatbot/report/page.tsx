@@ -26,7 +26,7 @@ export default function ChatbotPage({
       content: `Welcome to the Sales Report Assistant! Share your sales data, and I’ll provide you with a clear and concise report with the key insights.Please share your data in the following format:
         Region: [Enter region name];  
         Product Categories: [List categories, e.g., Fruits, Snacks];  
-        Total Revenue: [Enter total revenue amount];  
+        Total Revenue: [Enter total revenue amount,  e.g., $100,000];  
         Growth Trend: [Enter growth trend in percentage];  
         Units Sold: [Enter total units sold];  
         Breakdown: Category1:[Number of units sold]; Category2:[Number of units sold]; [Add more categories as needed]`,
@@ -78,7 +78,13 @@ export default function ChatbotPage({
       setTimeout(() => {
         const followUpMessage: Message = {
           type: "bot",
-          content: "Do you have any other data you'd like me to summarize?",
+          content: `Any more data to be processed?.Let me provide you with a clear and concise report with the key insights.Please share your data in the following format:
+        Region: [Enter region name];  
+        Product Categories: [List categories, e.g., Fruits, Snacks];  
+        Total Revenue: [Enter total revenue amount, e.g., $100,000];  
+        Growth Trend: [Enter growth trend in percentage];  
+        Units Sold: [Enter total units sold];  
+        Breakdown: Category1:[Number of units sold]; Category2:[Number of units sold]; [Add more categories as needed]`,
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, followUpMessage]);
