@@ -1,0 +1,1297 @@
+scale,location,storage_capacity,quality_preference,product_category,sustainability_focus,top_product,second_product,third_product
+Large,Urban,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Large,Economy,Meat,True,Chicken,Beef,Pork
+Large,Urban,Large,Economy,Meat,False,Chicken,Beef,Pork
+Large,Urban,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Large,Economy,Beverages,True,Juice,Soda,Water
+Large,Urban,Large,Economy,Beverages,False,Juice,Soda,Water
+Large,Urban,Large,Economy,Grains,True,Rice,Wheat,Oats
+Large,Urban,Large,Economy,Grains,False,Rice,Wheat,Oats
+Large,Urban,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Large,Standard,Meat,True,Chicken,Beef,Pork
+Large,Urban,Large,Standard,Meat,False,Chicken,Beef,Pork
+Large,Urban,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Large,Standard,Beverages,True,Juice,Soda,Water
+Large,Urban,Large,Standard,Beverages,False,Juice,Soda,Water
+Large,Urban,Large,Standard,Grains,True,Rice,Wheat,Oats
+Large,Urban,Large,Standard,Grains,False,Rice,Wheat,Oats
+Large,Urban,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Large,Premium,Meat,True,Chicken,Beef,Pork
+Large,Urban,Large,Premium,Meat,False,Chicken,Beef,Pork
+Large,Urban,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Large,Premium,Beverages,True,Juice,Soda,Water
+Large,Urban,Large,Premium,Beverages,False,Juice,Soda,Water
+Large,Urban,Large,Premium,Grains,True,Rice,Wheat,Oats
+Large,Urban,Large,Premium,Grains,False,Rice,Wheat,Oats
+Large,Urban,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Large,Urban,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Large,Urban,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Limited,Economy,Beverages,True,Juice,Soda,Water
+Large,Urban,Limited,Economy,Beverages,False,Juice,Soda,Water
+Large,Urban,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Large,Urban,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Large,Urban,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Large,Urban,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Large,Urban,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Limited,Standard,Beverages,True,Juice,Soda,Water
+Large,Urban,Limited,Standard,Beverages,False,Juice,Soda,Water
+Large,Urban,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Large,Urban,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Large,Urban,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Large,Urban,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Large,Urban,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Limited,Premium,Beverages,True,Juice,Soda,Water
+Large,Urban,Limited,Premium,Beverages,False,Juice,Soda,Water
+Large,Urban,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Large,Urban,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Large,Urban,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Large,Urban,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Large,Urban,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Medium,Economy,Beverages,True,Juice,Soda,Water
+Large,Urban,Medium,Economy,Beverages,False,Juice,Soda,Water
+Large,Urban,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Large,Urban,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Large,Urban,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Large,Urban,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Large,Urban,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Medium,Standard,Beverages,True,Juice,Soda,Water
+Large,Urban,Medium,Standard,Beverages,False,Juice,Soda,Water
+Large,Urban,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Large,Urban,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Large,Urban,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Urban,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Urban,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Large,Urban,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Large,Urban,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Urban,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Urban,Medium,Premium,Beverages,True,Juice,Soda,Water
+Large,Urban,Medium,Premium,Beverages,False,Juice,Soda,Water
+Large,Urban,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Large,Urban,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Large,Urban,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Urban,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Urban,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Urban,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Urban,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Urban,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Large,Economy,Meat,True,Chicken,Beef,Pork
+Large,Rural,Large,Economy,Meat,False,Chicken,Beef,Pork
+Large,Rural,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Large,Economy,Beverages,True,Juice,Soda,Water
+Large,Rural,Large,Economy,Beverages,False,Juice,Soda,Water
+Large,Rural,Large,Economy,Grains,True,Rice,Wheat,Oats
+Large,Rural,Large,Economy,Grains,False,Rice,Wheat,Oats
+Large,Rural,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Large,Standard,Meat,True,Chicken,Beef,Pork
+Large,Rural,Large,Standard,Meat,False,Chicken,Beef,Pork
+Large,Rural,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Large,Standard,Beverages,True,Juice,Soda,Water
+Large,Rural,Large,Standard,Beverages,False,Juice,Soda,Water
+Large,Rural,Large,Standard,Grains,True,Rice,Wheat,Oats
+Large,Rural,Large,Standard,Grains,False,Rice,Wheat,Oats
+Large,Rural,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Large,Premium,Meat,True,Chicken,Beef,Pork
+Large,Rural,Large,Premium,Meat,False,Chicken,Beef,Pork
+Large,Rural,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Large,Premium,Beverages,True,Juice,Soda,Water
+Large,Rural,Large,Premium,Beverages,False,Juice,Soda,Water
+Large,Rural,Large,Premium,Grains,True,Rice,Wheat,Oats
+Large,Rural,Large,Premium,Grains,False,Rice,Wheat,Oats
+Large,Rural,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Large,Rural,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Large,Rural,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Limited,Economy,Beverages,True,Juice,Soda,Water
+Large,Rural,Limited,Economy,Beverages,False,Juice,Soda,Water
+Large,Rural,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Large,Rural,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Large,Rural,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Large,Rural,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Large,Rural,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Limited,Standard,Beverages,True,Juice,Soda,Water
+Large,Rural,Limited,Standard,Beverages,False,Juice,Soda,Water
+Large,Rural,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Large,Rural,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Large,Rural,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Large,Rural,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Large,Rural,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Limited,Premium,Beverages,True,Juice,Soda,Water
+Large,Rural,Limited,Premium,Beverages,False,Juice,Soda,Water
+Large,Rural,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Large,Rural,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Large,Rural,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Large,Rural,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Large,Rural,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Medium,Economy,Beverages,True,Juice,Soda,Water
+Large,Rural,Medium,Economy,Beverages,False,Juice,Soda,Water
+Large,Rural,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Large,Rural,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Large,Rural,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Large,Rural,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Large,Rural,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Medium,Standard,Beverages,True,Juice,Soda,Water
+Large,Rural,Medium,Standard,Beverages,False,Juice,Soda,Water
+Large,Rural,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Large,Rural,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Large,Rural,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Rural,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Rural,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Large,Rural,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Large,Rural,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Rural,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Rural,Medium,Premium,Beverages,True,Juice,Soda,Water
+Large,Rural,Medium,Premium,Beverages,False,Juice,Soda,Water
+Large,Rural,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Large,Rural,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Large,Rural,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Rural,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Rural,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Rural,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Rural,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Rural,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Large,Economy,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Large,Economy,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Large,Economy,Beverages,True,Juice,Soda,Water
+Large,Suburban,Large,Economy,Beverages,False,Juice,Soda,Water
+Large,Suburban,Large,Economy,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Large,Economy,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Large,Standard,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Large,Standard,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Large,Standard,Beverages,True,Juice,Soda,Water
+Large,Suburban,Large,Standard,Beverages,False,Juice,Soda,Water
+Large,Suburban,Large,Standard,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Large,Standard,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Large,Premium,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Large,Premium,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Large,Premium,Beverages,True,Juice,Soda,Water
+Large,Suburban,Large,Premium,Beverages,False,Juice,Soda,Water
+Large,Suburban,Large,Premium,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Large,Premium,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Limited,Economy,Beverages,True,Juice,Soda,Water
+Large,Suburban,Limited,Economy,Beverages,False,Juice,Soda,Water
+Large,Suburban,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Limited,Standard,Beverages,True,Juice,Soda,Water
+Large,Suburban,Limited,Standard,Beverages,False,Juice,Soda,Water
+Large,Suburban,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Limited,Premium,Beverages,True,Juice,Soda,Water
+Large,Suburban,Limited,Premium,Beverages,False,Juice,Soda,Water
+Large,Suburban,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Medium,Economy,Beverages,True,Juice,Soda,Water
+Large,Suburban,Medium,Economy,Beverages,False,Juice,Soda,Water
+Large,Suburban,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Medium,Standard,Beverages,True,Juice,Soda,Water
+Large,Suburban,Medium,Standard,Beverages,False,Juice,Soda,Water
+Large,Suburban,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Large,Suburban,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Large,Suburban,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Large,Suburban,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Large,Suburban,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Large,Suburban,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Large,Suburban,Medium,Premium,Beverages,True,Juice,Soda,Water
+Large,Suburban,Medium,Premium,Beverages,False,Juice,Soda,Water
+Large,Suburban,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Large,Suburban,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Large,Suburban,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Large,Suburban,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Large,Suburban,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Large,Suburban,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Large,Suburban,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Large,Suburban,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Large,Economy,Meat,True,Chicken,Beef,Pork
+Small,Urban,Large,Economy,Meat,False,Chicken,Beef,Pork
+Small,Urban,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Large,Economy,Beverages,True,Juice,Soda,Water
+Small,Urban,Large,Economy,Beverages,False,Juice,Soda,Water
+Small,Urban,Large,Economy,Grains,True,Rice,Wheat,Oats
+Small,Urban,Large,Economy,Grains,False,Rice,Wheat,Oats
+Small,Urban,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Large,Standard,Meat,True,Chicken,Beef,Pork
+Small,Urban,Large,Standard,Meat,False,Chicken,Beef,Pork
+Small,Urban,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Large,Standard,Beverages,True,Juice,Soda,Water
+Small,Urban,Large,Standard,Beverages,False,Juice,Soda,Water
+Small,Urban,Large,Standard,Grains,True,Rice,Wheat,Oats
+Small,Urban,Large,Standard,Grains,False,Rice,Wheat,Oats
+Small,Urban,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Large,Premium,Meat,True,Chicken,Beef,Pork
+Small,Urban,Large,Premium,Meat,False,Chicken,Beef,Pork
+Small,Urban,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Large,Premium,Beverages,True,Juice,Soda,Water
+Small,Urban,Large,Premium,Beverages,False,Juice,Soda,Water
+Small,Urban,Large,Premium,Grains,True,Rice,Wheat,Oats
+Small,Urban,Large,Premium,Grains,False,Rice,Wheat,Oats
+Small,Urban,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Small,Urban,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Small,Urban,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Limited,Economy,Beverages,True,Juice,Soda,Water
+Small,Urban,Limited,Economy,Beverages,False,Juice,Soda,Water
+Small,Urban,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Small,Urban,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Small,Urban,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Small,Urban,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Small,Urban,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Limited,Standard,Beverages,True,Juice,Soda,Water
+Small,Urban,Limited,Standard,Beverages,False,Juice,Soda,Water
+Small,Urban,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Small,Urban,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Small,Urban,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Small,Urban,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Small,Urban,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Limited,Premium,Beverages,True,Juice,Soda,Water
+Small,Urban,Limited,Premium,Beverages,False,Juice,Soda,Water
+Small,Urban,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Small,Urban,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Small,Urban,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Small,Urban,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Small,Urban,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Medium,Economy,Beverages,True,Juice,Soda,Water
+Small,Urban,Medium,Economy,Beverages,False,Juice,Soda,Water
+Small,Urban,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Small,Urban,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Small,Urban,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Small,Urban,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Small,Urban,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Medium,Standard,Beverages,True,Juice,Soda,Water
+Small,Urban,Medium,Standard,Beverages,False,Juice,Soda,Water
+Small,Urban,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Small,Urban,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Small,Urban,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Urban,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Urban,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Small,Urban,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Small,Urban,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Urban,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Urban,Medium,Premium,Beverages,True,Juice,Soda,Water
+Small,Urban,Medium,Premium,Beverages,False,Juice,Soda,Water
+Small,Urban,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Small,Urban,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Small,Urban,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Urban,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Urban,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Urban,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Urban,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Urban,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Large,Economy,Meat,True,Chicken,Beef,Pork
+Small,Rural,Large,Economy,Meat,False,Chicken,Beef,Pork
+Small,Rural,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Large,Economy,Beverages,True,Juice,Soda,Water
+Small,Rural,Large,Economy,Beverages,False,Juice,Soda,Water
+Small,Rural,Large,Economy,Grains,True,Rice,Wheat,Oats
+Small,Rural,Large,Economy,Grains,False,Rice,Wheat,Oats
+Small,Rural,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Large,Standard,Meat,True,Chicken,Beef,Pork
+Small,Rural,Large,Standard,Meat,False,Chicken,Beef,Pork
+Small,Rural,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Large,Standard,Beverages,True,Juice,Soda,Water
+Small,Rural,Large,Standard,Beverages,False,Juice,Soda,Water
+Small,Rural,Large,Standard,Grains,True,Rice,Wheat,Oats
+Small,Rural,Large,Standard,Grains,False,Rice,Wheat,Oats
+Small,Rural,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Large,Premium,Meat,True,Chicken,Beef,Pork
+Small,Rural,Large,Premium,Meat,False,Chicken,Beef,Pork
+Small,Rural,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Large,Premium,Beverages,True,Juice,Soda,Water
+Small,Rural,Large,Premium,Beverages,False,Juice,Soda,Water
+Small,Rural,Large,Premium,Grains,True,Rice,Wheat,Oats
+Small,Rural,Large,Premium,Grains,False,Rice,Wheat,Oats
+Small,Rural,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Small,Rural,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Small,Rural,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Limited,Economy,Beverages,True,Juice,Soda,Water
+Small,Rural,Limited,Economy,Beverages,False,Juice,Soda,Water
+Small,Rural,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Small,Rural,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Small,Rural,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Small,Rural,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Small,Rural,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Limited,Standard,Beverages,True,Juice,Soda,Water
+Small,Rural,Limited,Standard,Beverages,False,Juice,Soda,Water
+Small,Rural,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Small,Rural,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Small,Rural,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Small,Rural,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Small,Rural,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Limited,Premium,Beverages,True,Juice,Soda,Water
+Small,Rural,Limited,Premium,Beverages,False,Juice,Soda,Water
+Small,Rural,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Small,Rural,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Small,Rural,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Small,Rural,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Small,Rural,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Medium,Economy,Beverages,True,Juice,Soda,Water
+Small,Rural,Medium,Economy,Beverages,False,Juice,Soda,Water
+Small,Rural,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Small,Rural,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Small,Rural,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Small,Rural,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Small,Rural,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Medium,Standard,Beverages,True,Juice,Soda,Water
+Small,Rural,Medium,Standard,Beverages,False,Juice,Soda,Water
+Small,Rural,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Small,Rural,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Small,Rural,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Rural,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Rural,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Small,Rural,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Small,Rural,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Rural,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Rural,Medium,Premium,Beverages,True,Juice,Soda,Water
+Small,Rural,Medium,Premium,Beverages,False,Juice,Soda,Water
+Small,Rural,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Small,Rural,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Small,Rural,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Rural,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Rural,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Rural,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Rural,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Rural,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Large,Economy,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Large,Economy,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Large,Economy,Beverages,True,Juice,Soda,Water
+Small,Suburban,Large,Economy,Beverages,False,Juice,Soda,Water
+Small,Suburban,Large,Economy,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Large,Economy,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Large,Standard,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Large,Standard,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Large,Standard,Beverages,True,Juice,Soda,Water
+Small,Suburban,Large,Standard,Beverages,False,Juice,Soda,Water
+Small,Suburban,Large,Standard,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Large,Standard,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Large,Premium,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Large,Premium,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Large,Premium,Beverages,True,Juice,Soda,Water
+Small,Suburban,Large,Premium,Beverages,False,Juice,Soda,Water
+Small,Suburban,Large,Premium,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Large,Premium,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Limited,Economy,Beverages,True,Juice,Soda,Water
+Small,Suburban,Limited,Economy,Beverages,False,Juice,Soda,Water
+Small,Suburban,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Limited,Standard,Beverages,True,Juice,Soda,Water
+Small,Suburban,Limited,Standard,Beverages,False,Juice,Soda,Water
+Small,Suburban,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Limited,Premium,Beverages,True,Juice,Soda,Water
+Small,Suburban,Limited,Premium,Beverages,False,Juice,Soda,Water
+Small,Suburban,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Medium,Economy,Beverages,True,Juice,Soda,Water
+Small,Suburban,Medium,Economy,Beverages,False,Juice,Soda,Water
+Small,Suburban,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Medium,Standard,Beverages,True,Juice,Soda,Water
+Small,Suburban,Medium,Standard,Beverages,False,Juice,Soda,Water
+Small,Suburban,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Small,Suburban,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Small,Suburban,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Small,Suburban,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Small,Suburban,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Small,Suburban,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Small,Suburban,Medium,Premium,Beverages,True,Juice,Soda,Water
+Small,Suburban,Medium,Premium,Beverages,False,Juice,Soda,Water
+Small,Suburban,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Small,Suburban,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Small,Suburban,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Small,Suburban,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Small,Suburban,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Small,Suburban,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Small,Suburban,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Small,Suburban,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Large,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Large,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Large,Economy,Beverages,True,Juice,Soda,Water
+Medium,Urban,Large,Economy,Beverages,False,Juice,Soda,Water
+Medium,Urban,Large,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Large,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Large,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Large,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Large,Standard,Beverages,True,Juice,Soda,Water
+Medium,Urban,Large,Standard,Beverages,False,Juice,Soda,Water
+Medium,Urban,Large,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Large,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Large,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Large,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Large,Premium,Beverages,True,Juice,Soda,Water
+Medium,Urban,Large,Premium,Beverages,False,Juice,Soda,Water
+Medium,Urban,Large,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Large,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Limited,Economy,Beverages,True,Juice,Soda,Water
+Medium,Urban,Limited,Economy,Beverages,False,Juice,Soda,Water
+Medium,Urban,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Limited,Standard,Beverages,True,Juice,Soda,Water
+Medium,Urban,Limited,Standard,Beverages,False,Juice,Soda,Water
+Medium,Urban,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Limited,Premium,Beverages,True,Juice,Soda,Water
+Medium,Urban,Limited,Premium,Beverages,False,Juice,Soda,Water
+Medium,Urban,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Medium,Economy,Beverages,True,Juice,Soda,Water
+Medium,Urban,Medium,Economy,Beverages,False,Juice,Soda,Water
+Medium,Urban,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Medium,Standard,Beverages,True,Juice,Soda,Water
+Medium,Urban,Medium,Standard,Beverages,False,Juice,Soda,Water
+Medium,Urban,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Urban,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Urban,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Urban,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Urban,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Urban,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Urban,Medium,Premium,Beverages,True,Juice,Soda,Water
+Medium,Urban,Medium,Premium,Beverages,False,Juice,Soda,Water
+Medium,Urban,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Urban,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Urban,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Urban,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Urban,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Urban,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Urban,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Urban,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Large,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Large,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Large,Economy,Beverages,True,Juice,Soda,Water
+Medium,Rural,Large,Economy,Beverages,False,Juice,Soda,Water
+Medium,Rural,Large,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Large,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Large,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Large,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Large,Standard,Beverages,True,Juice,Soda,Water
+Medium,Rural,Large,Standard,Beverages,False,Juice,Soda,Water
+Medium,Rural,Large,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Large,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Large,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Large,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Large,Premium,Beverages,True,Juice,Soda,Water
+Medium,Rural,Large,Premium,Beverages,False,Juice,Soda,Water
+Medium,Rural,Large,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Large,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Limited,Economy,Beverages,True,Juice,Soda,Water
+Medium,Rural,Limited,Economy,Beverages,False,Juice,Soda,Water
+Medium,Rural,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Limited,Standard,Beverages,True,Juice,Soda,Water
+Medium,Rural,Limited,Standard,Beverages,False,Juice,Soda,Water
+Medium,Rural,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Limited,Premium,Beverages,True,Juice,Soda,Water
+Medium,Rural,Limited,Premium,Beverages,False,Juice,Soda,Water
+Medium,Rural,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Medium,Economy,Beverages,True,Juice,Soda,Water
+Medium,Rural,Medium,Economy,Beverages,False,Juice,Soda,Water
+Medium,Rural,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Medium,Standard,Beverages,True,Juice,Soda,Water
+Medium,Rural,Medium,Standard,Beverages,False,Juice,Soda,Water
+Medium,Rural,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Rural,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Rural,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Rural,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Rural,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Rural,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Rural,Medium,Premium,Beverages,True,Juice,Soda,Water
+Medium,Rural,Medium,Premium,Beverages,False,Juice,Soda,Water
+Medium,Rural,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Rural,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Rural,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Rural,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Rural,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Rural,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Rural,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Rural,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Large,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Large,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Large,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Large,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Large,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Large,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Large,Economy,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Large,Economy,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Large,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Large,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Large,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Large,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Large,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Large,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Large,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Large,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Large,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Large,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Large,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Large,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Large,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Large,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Large,Standard,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Large,Standard,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Large,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Large,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Large,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Large,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Large,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Large,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Large,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Large,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Large,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Large,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Large,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Large,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Large,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Large,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Large,Premium,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Large,Premium,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Large,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Large,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Large,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Large,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Large,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Large,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Large,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Large,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Limited,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Limited,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Limited,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Limited,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Limited,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Limited,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Limited,Economy,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Limited,Economy,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Limited,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Limited,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Limited,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Limited,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Limited,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Limited,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Limited,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Limited,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Limited,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Limited,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Limited,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Limited,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Limited,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Limited,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Limited,Standard,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Limited,Standard,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Limited,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Limited,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Limited,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Limited,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Limited,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Limited,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Limited,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Limited,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Limited,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Limited,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Limited,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Limited,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Limited,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Limited,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Limited,Premium,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Limited,Premium,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Limited,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Limited,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Limited,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Limited,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Limited,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Limited,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Limited,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Limited,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Medium,Economy,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Medium,Economy,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Medium,Economy,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Medium,Economy,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Medium,Economy,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Medium,Economy,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Medium,Economy,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Medium,Economy,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Medium,Economy,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Medium,Economy,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Medium,Economy,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Medium,Economy,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Medium,Economy,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Medium,Economy,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Medium,Economy,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Medium,Economy,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Medium,Standard,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Medium,Standard,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Medium,Standard,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Medium,Standard,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Medium,Standard,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Medium,Standard,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Medium,Standard,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Medium,Standard,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Medium,Standard,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Medium,Standard,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Medium,Standard,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Medium,Standard,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Medium,Standard,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Medium,Standard,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Medium,Standard,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Medium,Standard,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Medium,Premium,Vegetables,True,Carrots,Spinach,Broccoli
+Medium,Suburban,Medium,Premium,Vegetables,False,Carrots,Spinach,Broccoli
+Medium,Suburban,Medium,Premium,Meat,True,Chicken,Beef,Pork
+Medium,Suburban,Medium,Premium,Meat,False,Chicken,Beef,Pork
+Medium,Suburban,Medium,Premium,Seafood,True,Shrimp,Fish,Crab
+Medium,Suburban,Medium,Premium,Seafood,False,Shrimp,Fish,Crab
+Medium,Suburban,Medium,Premium,Beverages,True,Juice,Soda,Water
+Medium,Suburban,Medium,Premium,Beverages,False,Juice,Soda,Water
+Medium,Suburban,Medium,Premium,Grains,True,Rice,Wheat,Oats
+Medium,Suburban,Medium,Premium,Grains,False,Rice,Wheat,Oats
+Medium,Suburban,Medium,Premium,Dairy,True,Milk,Cheese,Yogurt
+Medium,Suburban,Medium,Premium,Dairy,False,Milk,Cheese,Yogurt
+Medium,Suburban,Medium,Premium,Fruits,True,Apples,Bananas,Oranges
+Medium,Suburban,Medium,Premium,Fruits,False,Apples,Bananas,Oranges
+Medium,Suburban,Medium,Premium,Frozen Foods,True,Frozen Pizza,Ice Cream,Frozen Vegetables
+Medium,Suburban,Medium,Premium,Frozen Foods,False,Frozen Pizza,Ice Cream,Frozen Vegetables
