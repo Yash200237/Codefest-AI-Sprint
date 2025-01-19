@@ -64,7 +64,7 @@ export default function ChatbotPage({
         "http://127.0.0.1:8000/api/summarize/",
         { text: input.trim() }
       );
-      const botResponse = response.data.summary;
+      const botResponse = response.data.generated_report;
 
       const botMessage: Message = {
         type: "bot",
