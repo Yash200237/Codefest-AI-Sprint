@@ -53,6 +53,7 @@ pip install mysql-connector-python sqlalchemy databases
 pip install passlib[bcrypt]
 pip install python-dotenv
 pip install python-jose pymysql
+pip install sentencepiece
 ```
 
 ### 5. Run Backend Server
