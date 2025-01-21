@@ -6,7 +6,7 @@ from passlib.context import CryptContext
 from jose import jwt, JWTError
 from dotenv import load_dotenv
 import os
-from database import SessionLocal
+from database import SessionLocal_1
 
 load_dotenv()
 
@@ -14,7 +14,7 @@ SECRET_KEY = os.getenv("AUTH_SECRET_KEY")
 ALGORITHM = os.getenv("AUTH_ALGORITHM")
 
 def get_db():
-    db = SessionLocal()
+    db = SessionLocal_1()
     try:
         yield db
     finally:

@@ -1,9 +1,22 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException,Depends
 from pydantic import BaseModel
 from transformers import pipeline
 from collections import defaultdict
+from database import SessionLocal_2
+from sqlalchemy.orm import Session
+from sqlalchemy import text  # Import text() from SQLAlchemy
+from collections import defaultdict
+
 
 router = APIRouter()
+
+# Dependency to get a session for Database 2
+def get_db_2():
+    db2 = SessionLocal_2()
+    try:
+        yield db2
+    finally:
+        db2.close()
 
 # Load the zero-shot classification and summarization models
 summarization_model = pipeline("summarization", model="t5-small")
@@ -11,20 +24,36 @@ sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncas
 
 # Input schema
 class FeedbackInput(BaseModel):
-    text: str
+    product_name: str
 
 @router.post("/analyze_feedback/")
-async def analyze_feedback(input: FeedbackInput):
+async def analyze_feedback(input: FeedbackInput, db: Session = Depends(get_db_2)):
     """Analyze comma-separated reviews and provide positive/negative summaries."""
     try:
+        # Execute the stored procedure
+        stored_procedure = text('CALL GetConcatenatedReviews(:product_name, @concatenated_reviews')
+        
+        
+        # Execute the stored procedure with the input parameter
+        db.execute(stored_procedure, {"product_name": input.product_name})
+        db.commit()
+
+        
+        # Retrieve the OUT parameter
+        result = db.execute(text("SELECT @concatenated_reviews AS concatenated_reviews")).fetchone()
+        
+        # Extract the result
+        '''
+        concatenated_reviews = result["concatenated_reviews"]      
+          
         # Split the input text into individual reviews by commas
-        reviews = [review.strip() for review in input.text.split(',')]
+        concatenated_reviews = [review.strip() for review in concatenated_reviews.split('.')]
 
         # Initialize results storage by sentiment
         sentiment_results = defaultdict(list)
 
         # Process each review
-        for review in reviews:
+        for review in concatenated_reviews:
             # Sentiment analysis: Determine if the review is positive or negative
             sentiment_result = sentiment_analyzer(review)
             sentiment_label = sentiment_result[0]['label']
@@ -47,10 +76,19 @@ async def analyze_feedback(input: FeedbackInput):
             final_summary = aggregated_summary_result[0]["summary_text"]
 
             # Append the result to the final text
-            result_text += f"{sentiment} Summary: {final_summary}\n"
+            result_text += f"{sentiment} Summary: {final_summary}\n" 
 
         # Return the aggregated summaries
-        return {"reviews_analysis": result_text.strip()}
+        return {"reviews_analysis": result_text.strip()}'''
+        
+        return {"reviews_analysis": result}
+
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+    
+    
+
+
+
+
